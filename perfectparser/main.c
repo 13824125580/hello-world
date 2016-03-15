@@ -540,11 +540,11 @@ int main(void)
 	   	printf("%s line %d, ret = %d.\n", __func__, __LINE__, ret);
 		continue;
 	   }
-	    if(ts_pid(buf) == 0x12)
-	    {
-				//parse_section(buf, &section);
-				parse_feed_section(buf, &feed);
-	    }
+	   if(ts_pid(buf) == 0x12)
+	   {
+		//parse_section(buf, &section);
+		parse_feed_section(buf, &feed);
+	   } 
 	}
 	return 0;
 }
