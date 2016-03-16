@@ -24,8 +24,6 @@ typedef struct tsc_section_chan
 typedef struct dvb_section_feed
 {
 	unsigned char  secbuf_base[MAX_SITABLE_LENGTH + 188];
-	unsigned char* secbuf;
-	unsigned short secbufp;
 	unsigned short seclen; 
 	unsigned short tsfeedp;		
 	unsigned char  cc;
@@ -395,8 +393,7 @@ static inline unsigned char payload(const unsigned char *tsp)
 
 static void dvb_dmx_section_new(dvb_section_feed_t* feed)
 {
-	feed->tsfeedp = feed->secbufp = feed->seclen = 0;
-	feed->secbuf = feed->secbuf_base;	
+	feed->tsfeedp = feed->seclen = 0;
 }
 int parse_feed_section(const unsigned char *tsp, dvb_section_feed_t *feed)
 {
@@ -456,9 +453,13 @@ int parse_feed_section(const unsigned char *tsp, dvb_section_feed_t *feed)
 			memcpy(feed->secbuf_base + feed->tsfeedp, before, before_len);
 			feed->tsfeedp += before_len;
 			
-			if(feed->tsfeedp)
+			if(feed->tsfeedp > 2)
 			{
-				feed->sect_cb(feed->secbuf_base, section_length(feed->secbuf_base));
+				feed->seclen = section_length(feed->secbuf_base);
+				if(feed->tsfeedp >= feed->seclen)
+				{
+					feed->sect_cb(feed->secbuf_base, feed->seclen);
+				}
 			}
 			
 			feed->pusi_seen = 1;
@@ -468,6 +469,8 @@ int parse_feed_section(const unsigned char *tsp, dvb_section_feed_t *feed)
 			memcpy(feed->secbuf_base + feed->tsfeedp, after, after_len);
 			feed->tsfeedp += after_len;
 		}
+		else if(count > 0)
+			printf("%s line %d, lost %d bytes.\n", __func__, __LINE__, count);
 	}
 	else
 	{
@@ -477,25 +480,31 @@ int parse_feed_section(const unsigned char *tsp, dvb_section_feed_t *feed)
 			feed->tsfeedp += count;
 		}
 		else
+		{
 			dvb_dmx_section_new(feed);
+		}
 		
 	}
+
+#if 1
 	if(feed->tsfeedp > 2)
 	{
-		if(feed->tsfeedp >= section_length(feed->secbuf_base))
+		feed->seclen = section_length(feed->secbuf_base);
+		if(feed->tsfeedp >= feed->seclen)
 		{
-			int sect_len = section_length(feed->secbuf_base);
+			int sect_len = feed->seclen;
 			feed->sect_cb(feed->secbuf_base, sect_len);
 			
 			if(feed->secbuf_base[sect_len] != 0xff)
 			{
 				feed->tsfeedp -= sect_len;
-				memcpy(feed->secbuf_base, feed->secbuf_base + section_length(feed->secbuf_base) , feed->tsfeedp);
+				memcpy(feed->secbuf_base, feed->secbuf_base + sect_len, feed->tsfeedp);
 			}
-			else 	//not valid tableid.
+			else 	//not valid tableid, restart.
 				dvb_dmx_section_new(feed);
 		}
 	}
+#endif
 	return 0;
 }
 
@@ -534,17 +543,17 @@ int main(void)
 
         for(j = 0; j < size; j += 188)
         {
-           int ret =  fread(buf, 188, 1, tsfile);
-	   if(ret != 1)
-	   {
-	   	printf("%s line %d, ret = %d.\n", __func__, __LINE__, ret);
-		continue;
-	   }
-	   if(ts_pid(buf) == 0x12)
-	   {
-		//parse_section(buf, &section);
-		parse_feed_section(buf, &feed);
-	   } 
+		int ret =  fread(buf, 188, 1, tsfile);
+	   	if(ret != 1)
+	   	{
+	   		printf("%s line %d, ret = %d.\n", __func__, __LINE__, ret);
+			continue;
+	   	}
+		if(ts_pid(buf) == 0x12)
+	    	{
+			//parse_section(buf, &section);
+			parse_feed_section(buf, &feed);
+	    	}
 	}
 	return 0;
 }
