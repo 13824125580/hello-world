@@ -461,11 +461,14 @@ int parse_feed_section(const unsigned char *tsp, dvb_section_feed_t *feed)
 					feed->sect_cb(feed->secbuf_base, feed->seclen);
 				}
 			}
-			
-			feed->pusi_seen = 1;
+			else if(feed->tsfeedp)
+			{
+				printf("%s line %d, lost %d bytes.\n", __func__, __LINE__, feed->tsfeedp);
+			}
 			
 			dvb_dmx_section_new(feed);
 
+			feed->pusi_seen = 1;
 			memcpy(feed->secbuf_base + feed->tsfeedp, after, after_len);
 			feed->tsfeedp += after_len;
 		}
