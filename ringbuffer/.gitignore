@@ -1,0 +1,4 @@
+.*
+ring
+*.o
+!.gitignore
