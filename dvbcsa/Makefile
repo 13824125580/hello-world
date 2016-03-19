@@ -10,6 +10,6 @@ lib:
 	gcc -c -g -static block_cipher.c
 	ar -crsv libcsa.a *.o
 clean:
-	-rm *.o *.a csad clear.ts log.txt
+	-rm -fr *.o *.a csad clear.ts log.txt
 
 
