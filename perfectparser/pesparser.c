@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
+#define PES_BUF_SIZE		(50 * 1024 * 1024)
 
 typedef int (*pfunc_pes_request_buffer)(void *cookie, unsigned int req_size, void ** retbuf, unsigned int* retbuf_size);
 typedef int (*pfunc_pes_update_buffer)(void *cookie, unsigned int size);
@@ -101,7 +102,7 @@ static int pes_payload(const unsigned char* tsp, const unsigned char** payload, 
 
 typedef struct user_pes_structure
 {
-	unsigned char buf[50 *1024 * 1024];
+	unsigned char buf[PES_BUF_SIZE];
 	unsigned int  buf_pos;
 	unsigned int  last_len;
 }user_pes_param_t;
@@ -112,8 +113,7 @@ int pes_request_buffer(void *cookie, unsigned int req_size, void ** retbuf, unsi
 {
 	int remain;
 
-	remain = 50 * 1024 *1024  - user_pes_param.buf_pos;
-
+	remain = PES_BUF_SIZE  - user_pes_param.buf_pos;
 	if(remain < req_size)
 	{
 		*retbuf = NULL;
@@ -218,7 +218,7 @@ int parse_pes_packet(pes_feed_param_t *feed, const unsigned char* tsp)
 	if(feed->peshdr_seen)
 		printf("%s line %d, found peshdr.\n", __func__, __LINE__);
 
-	if(payload_len > (feed->req_buf_len - feed->req_buf_pos))
+	if(payload_len)
 	{
 		feed->buf = NULL;
 		feed->req_buf_len = feed->req_buf_pos = 0;
@@ -236,7 +236,7 @@ int parse_pes_packet(pes_feed_param_t *feed, const unsigned char* tsp)
 		}
 	
 	}		
-	else if(feed->buf == NULL)
+	else
 	{
 		printf("%s line %d, wrong condition!\n", __func__, __LINE__);
 		feed->buf = NULL;
