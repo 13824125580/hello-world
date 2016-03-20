@@ -15,8 +15,6 @@ typedef struct fifo
 	uint8_t 	*data;
 }fifo_t;
 
-
-
 int32_t  fifo_init(fifo_t *fifo, uint8_t *buf, uint32_t size)
 {
 	if((buf == NULL) || (size == 0) || (fifo == NULL))
@@ -87,7 +85,7 @@ int32_t fifo_in(fifo_t *fifo, uint8_t* buf, uint32_t size)
 	}
 
 	uint32_t aval = fifo->size - 1 - (fifo->in - fifo->out + fifo->size) % fifo->size;	
-			
+		
 	if(aval < size)
 	{
 		size = aval;
@@ -96,15 +94,14 @@ int32_t fifo_in(fifo_t *fifo, uint8_t* buf, uint32_t size)
 	size = size - size%188;
 	if(size < 188)
 		return 0;
-	
-	uint32_t l = min(size, fifo->size-fifo->in);
-	 
-       memcpy(fifo->data + fifo->in, buf, l);
-       memcpy(fifo->data,buf+l, size -l);
-	
+
+	uint32_t l = min(size, fifo->size - fifo->in);
+ 
+	memcpy(fifo->data + fifo->in, buf, l);
+	memcpy(fifo->data, buf + l, size - l);
+
 	fifo->in = (fifo->in + size) % fifo->size;
 	return  size;
-
 }
 
 int32_t fifo_out(fifo_t *fifo, uint8_t *buf, uint32_t size)
@@ -117,13 +114,12 @@ int32_t fifo_out(fifo_t *fifo, uint8_t *buf, uint32_t size)
 	{
 	    size = l;
 	}
-	printf("%s line %d, size = %d, l = %d.\n", __func__, __LINE__, size, l);
+
 	size = size - size % 188;
 	if(size < 188)
 		return 0;
 
 	uint32_t len = min(fifo->size - fifo->out, size);
-	//printf("%s line %d, fifo->out = %d,fifo->in = %d, len = %d.\n", __func__, __LINE__, fifo->out, fifo->in, size);
 	memcpy(buf, fifo->data + fifo->out, len );
 	memcpy(buf + len,fifo->data, size -len);
 	
