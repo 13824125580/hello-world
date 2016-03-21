@@ -143,7 +143,7 @@ int main()
     }  
       
     while(count--){  
-        DBG("[0] main running\n");  
+        DBG("[%d] main running.\n", count);  
         sleep(2);  
     }  
       
