@@ -19,33 +19,22 @@
 #endif  
 #define ERR(fmt,args...) fprintf(stderr,  fmt,  ##args)  
   
-static int isThreadQuit = 0;  
-int gQid;//消息队列id  
+static int thread_quit_flag = 0;  
+int msgq_hdl;//消息队列id  
 int gMyProcId = MSG_TYPE_MSG1;  
-/* 
-某设备写操作，不同同时访问，所以所以需要线程锁保护 
-1、将函数DeviceWrite中加锁 
-2、在访问DeviceWrite的线程中加锁 
-以上两种方法跟据需要选择其一。 
-本例中在访问的线程中加锁 
-*/  
-void DeviceWrite(char *str)  
-{  
-    /*SemWait(gHndlSem);*/  
-    DBG("Device Write: %s\n",str);  
-    /*SemRelease(gHndlSem);*/  
-}  
+
+
 void SetXxThreadQuit()  
 {     
     /*quit*/  
-    isThreadQuit = 1;  
+    thread_quit_flag = 1;  
 }  
-void *XxManageThread(void *arg)  
+void *message_sender(void *arg)  
 {  
     char *cmd = (char*)arg;  
-    DBG("arg value=%s\n",cmd);  
+    DBG("%s line %d, arg value=%s\n",__func__, __LINE__, cmd);  
     static int i=0;  
-    while(isThreadQuit==0){  
+    while(thread_quit_flag==0){  
   
         MSG_BUF msg;  
         memset(&msg,0,sizeof(MSG_BUF));  
@@ -57,8 +46,8 @@ void *XxManageThread(void *arg)
         参数2是消息buf， 
         参数3是消息buf长度但不包含long的长度， 
         参数是4是消息发送的一些设置*/  
-        //msgsnd(gQid,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),0);  
-        syscall(SYS_msgsnd, gQid,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),0);  
+        //msgsnd(msgq_hdl,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),0);  
+        syscall(SYS_msgsnd, msgq_hdl,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),0);  
         DBG("msgsnd cmd = %d\n",msg.cmd);  
         sleep(1);  
           
@@ -67,11 +56,11 @@ void *XxManageThread(void *arg)
     pthread_exit(cmd);  
     //pthread_exit(NULL);  
 }  
-void *XxManageThreadMutex(void *arg)  
+void *message_comsumer(void *arg)  
 {  
     char *cmd = (char*)arg;  
     DBG("arg value=%s\n",cmd);  
-    while(isThreadQuit==0){  
+    while(thread_quit_flag==0){  
           
         MSG_BUF msg;  
         memset(&msg,0,sizeof(MSG_BUF));  
@@ -79,8 +68,8 @@ void *XxManageThreadMutex(void *arg)
         参数1参数2参数3参数5与msgsnd相同， 
         参数4是指定消息接收的范围，只有指定的消息type才会接收 
         */  
-        //int ret = msgrcv(gQid,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),gMyProcId,0);  
-        int ret = syscall(SYS_msgrcv, gQid,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),gMyProcId,0);  
+        //int ret = msgrcv(msgq_hdl,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),gMyProcId,0);  
+        int ret = syscall(SYS_msgrcv, msgq_hdl,(void*)&msg,sizeof(MSG_BUF)-sizeof(long),gMyProcId,0);  
         if(ret < 0){  
             ERR("Receive msg fail!!\n");  
             break;  
@@ -94,68 +83,45 @@ void *XxManageThreadMutex(void *arg)
     //pthread_exit(NULL);  
 }  
   
-int XxManageThreadInit()  
+static pthread_t message_sender_hdl;  
+static pthread_t message_consumer_hdl;  
+int init_thread(void)  
 {  
-    pthread_t tManageThread;  
-    pthread_t tManageThreadMutex;  
-      
-    //char *retn;  
     int ret;  
     /* 
       第二个参数是设置线程属性，一般很少用到(设置优先级等)，第四个参数为传递到线程的指针， 
       可以为任何类型 
     */  
-    ret = pthread_create(&tManageThread,NULL,XxManageThread,"1 thread");  
+    ret = pthread_create(&message_sender_hdl,NULL,message_sender,"1 thread");  
     if(ret == -1){  
         /*成功返回0.失败返回-1*/  
         ERR("Ctreate Thread ERROR\n");  
         return -1;  
     }  
   
-    ret = pthread_create(&tManageThreadMutex,NULL,XxManageThreadMutex,"2 thread");  
+    ret = pthread_create(&message_consumer_hdl,NULL,message_comsumer,"2 thread");  
     if(ret == -1){  
         /*成功返回0.失败返回-1*/  
         ERR("Ctreate Thread ERROR\n");  
         return -1;  
     }  
       
-    /* 
-      设置线程退出时资源的清理方式，如果是detach，退出时会自动清理 
-      如果是join，则要等待pthread_join调用时才会清理 
-    */  
-    pthread_detach(tManageThread);  
-    pthread_detach(tManageThreadMutex);  
-    //pthread_join(tManageThread,retn);  
-    //DBG("retn value=%s\n",retn);  
     return 0;  
 }  
   
-#define TEST_MAIN  
-#ifdef TEST_MAIN  
-int main()  
+int main(void)  
 {  
-    printf("hello liuyu\n");  
-    int count=3;  
-  
-    gQid = Msg_Init(MSG_KEY);  
-    if(XxManageThreadInit()==-1){  
-        exit(1);  
-    }  
+	msgq_hdl = Msg_Init(MSG_KEY);  
 
-      
-    while(count--){  
-    	pthread_yield();
-        DBG("[%d] main running.\n", count);  
-        sleep(2);  
-    }  
-      
-    SetXxThreadQuit();  
-    /*等待线程结束*/  
-    sleep(1);  
-  
-    /*清理消息队列*/  
-    Msg_Kill(gQid);  
-    DBG("waitting thread exit...\n");  
-    return 0;  
+	if(init_thread() == -1)
+    	{  
+    		exit(1);  
+	}  
+
+	pthread_join(message_sender_hdl, NULL);
+	pthread_join(message_consumer_hdl, NULL);
+
+	Msg_Kill(msgq_hdl);  
+
+	return 0;  
 }  
-#endif  
