@@ -19,7 +19,7 @@ void sig_hanlder(int signo)
   
 int main() 
 { 
-	signal(SIGPIPE, sig_hanlder);
+    signal(SIGPIPE, sig_hanlder);
     char buf[100]; 
     int n = 0; 
     int fd; 
@@ -38,15 +38,16 @@ int main()
 	printf("%s line %d.\n", __func__, __LINE__);
         if ((n = read(fd,buf,100)) < 0) 
         { 
-	printf("%s line %d.\n", __func__, __LINE__);
+	    printf("%s line %d.\n", __func__, __LINE__);
             if (errno == EAGAIN) 
             { 
                 printf("No data yet\n"); 
             } 
-        } else
+        } 
+	else
 	{
-	  printf("%s line %ddd buf = %s..\n", __func__, __LINE__, buf);
-	 write(STDOUT_FILENO,buf,n); 
+	    printf("%s line %ddd buf = %s..\n", __func__, __LINE__, buf);
+	    write(STDOUT_FILENO,buf,n); 
 	}
         sleep(1); //sleep 
     } 
