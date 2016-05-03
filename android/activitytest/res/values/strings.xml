@@ -1,5 +1,5 @@
 <resources>
 
     <string name="app_name">activitytest</string>
-
+	<string name="fuckyou">first helloworld</string>
 </resources>
