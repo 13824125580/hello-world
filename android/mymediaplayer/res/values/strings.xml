@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <string name="hello">Hello World, PlayActivity!</string>  
+    <string name="filename">视频文件</string>  
+    <string name="sdcarderror">SDCard不存在</string>  
+    <string name="app_name">mymediaplayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+</resources>  
