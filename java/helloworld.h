@@ -9,6 +9,14 @@ extern "C" {
 #endif
 /*
  * Class:     helloworld
+ * Method:    getline
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_helloworld_getline
+  (JNIEnv *, jobject, jstring);
+
+/*
+ * Class:     helloworld
  * Method:    print
  * Signature: ()V
  */
