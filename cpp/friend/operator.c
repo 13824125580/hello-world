@@ -4,6 +4,11 @@ using namespace std;
 class complex
 {
 friend istream &operator >> (istream &in,complex &s);
+public:
+    int operator()(int x) { 
+        cout<<"operator overload"<<endl;
+	return 2*x;
+    } 
 private:
     int real;
     int image;
@@ -19,12 +24,13 @@ istream &operator >> (istream &in,complex &s)
     cout<<s.image<<endl;
     return in; 
 } 
+
 //定义的复数类的输入运算的重载 
- 
 int main() 
 { 
     complex complex1; 
     cin >> complex1; 
+    cout<<complex1(5)<<endl;
  
     return 0;
 } 
