@@ -66,6 +66,7 @@ private:
        B3 bb;
 };
 
+A ff(3,4,5,6);
 int main(void)
 {
        A aa(1, 2, 3, 4);
