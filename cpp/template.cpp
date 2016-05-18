@@ -31,9 +31,17 @@ void  Base<T>::setA(T c)
     a = c ;
 }
 
+int test_reference(int &a, int &b)
+{
+        a = 100;
+        b = 900;
+}
+
 int main(void)
 {
 
+     int aa = 1;
+     int bb = 1;
      int n1=2,n2=10;
      double d1=1.5,d2=5.6;
      cout<< "较小整数:"<<MIN<int>(n1,n2)<<endl;
@@ -44,6 +52,10 @@ int main(void)
      Base <double> bc(4);
      bc.setA(4.3);
      cout<<bc.getA()<<endl;
+
+     cout<<"aa="<<aa<<endl<<"bb="<<bb<<endl;
+     test_reference(aa, bb);
+     cout<<"aa="<<aa<<endl<<"bb="<<bb<<endl;
 
      return 0;
 }
