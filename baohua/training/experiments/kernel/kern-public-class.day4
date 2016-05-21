@@ -1,0 +1,23 @@
+1. run globalmem driver
+training/kernel/drivers/globalmem/ch7
+
+2. run globalfifo driver
+training/kernel/drivers/globalfifo/ch9
+
+3. run globalfifo_test to test SIGIO
+training/kernel/drivers/globalfifo/ch9
+globalfifo_test.c
+
+4. run modinfo for a kernel module
+
+5. insmod book.ko with parameters 
+
+6. run checkpatch.pl for the kernel codes
+
+7. platform_device
+~/training/kernel/drivers/globalfifo/ch9-platform
+
+change the globalfifo driver to platform_driver, and move the
+platform_device to arch/arm/mach-xxx
+
+8. run lttv-gui for training/debug/lttng-traced-data/trace-nand

@@ -1,0 +1,34 @@
+1. run cat /proc/buddyinfo
+
+2. run cat /proc/slabinfo
+-------------------------
+compile hello.ko in PC and do get_free_page and kmalloc in hello_init,
+check buddyinfo and slabinfo
+run: training/kernel/drivers/hello
+-------------------------
+
+3. oom 
+#sudo bash
+#swapoff -a
+#echo 1 > /proc/sys/vm/overcommit_memory
+run: training/debug/mm/munch.c
+
+4. page reclaim
+launch firefox
+cat /proc/firefox-pid/smaps > 1
+run: training/debug/mm/munch.c
+cat /proc/firefox-pid/smaps > 2
+compare 1 and 2
+
+5. page cache
+(1)
+#free
+run: training/debug/mm/mmap.c with/without marco mlockall
+#free
+(2)
+drop page cache by:
+#echo 3 > /proc/sys/vm/drop_caches
+
+run python hello and java hello with "time" command, compare the
+time of 1st and 2nd
+      training/debug/mm/

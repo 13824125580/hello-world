@@ -1,0 +1,23 @@
+1. strace/ltrace
+2. add a very simple .c in drivers/char, Kconfig and Makefile
+
+#include <linux/init.h>
+#include <linux/module.h>
+
+static int __init hello_init(void)
+{
+	printk(KERN_INFO "Hello World enter\n");
+	return 0;
+}
+module_init(hello_init);
+
+static void __exit hello_exit(void)
+{
+	printk(KERN_INFO "Hello World exit\n ");
+}
+module_exit(hello_exit);
+
+3. run arm-...-objdump for a kernel binary(.o, .ko and vmlinux)
+4. run kernel/extra/run-no-graphics.sh and check the rootfs
+5. build busybox by ARM-toolchain and check the result
+6. run qemu by debug mode, set breakpoint at start_kernel and run step

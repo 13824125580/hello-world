@@ -1,0 +1,18 @@
+1. fork, vfork, copy-on-write
+training/process/fork
+2. orphan process
+fork a process, kill the parent-process, check the status of sub-process;
+fork a process, kill the son-process, parent-process doesn't wait sub-process
+3. process life period
+training/process/life_period.c
+4. run multi-thread applications and use strace to follow systemcall 
+training/thread/thread_life.c
+5. kernel thread
+add a kernel thread in the module_init of hello.ko
+
+static int __init hello_init(void)
+{
+	printk(KERN_INFO "Hello World enter\n");
+	return 0;
+}
+
