@@ -8,6 +8,13 @@ public:
 	{
 		
 	}
+	point3d(const point3d& obj)
+	{
+		cout<<"copy constuctor"<<endl;
+		_x = obj._x;
+		_y = obj._y;
+		_z = obj._z;
+	}
 
 	float x() const
 	{
@@ -78,6 +85,10 @@ protected:
 	float _z;
 };
 
+point3d foo(point3d r3d)
+{
+	return r3d;	
+}
 point3d pd;
 typedef float (point3d::*p)() const;//定义指向Person类无参数无返回值的成员函数的指针  
 int main(void)
@@ -86,5 +97,9 @@ int main(void)
 	p ip;
 	ip = &point3d::x;
 	(pd.*ip)();
+	
+	point3d cobj = pd;
+
+	point3d ret = foo(cobj);
 	return 0;
 }
