@@ -95,7 +95,7 @@ public:
        
        sp<B1> returnb1(void)
        {
-	    cout<<__func__<<endl<<__LINE__<<endl;
+	    cout<<__func__<<setw(3)<<__LINE__<<endl;
 	    return this;
        }
 private:
