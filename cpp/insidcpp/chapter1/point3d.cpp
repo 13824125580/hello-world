@@ -1,5 +1,13 @@
 #include <iostream>
 using namespace std;
+class test
+{
+	public:
+	test( float b)
+	{
+		cout<<__func__<<endl<<__LINE__<<endl;
+	}
+};
 class point3d
 {
 public:
@@ -97,5 +105,7 @@ ip = &point3d::x;
 (pd.*ip)();
 point3d cobj = pd;
 point3d ret = foo(cobj);
+
+test te = cobj.x();
 return 0;
 }

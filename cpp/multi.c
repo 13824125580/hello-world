@@ -1,5 +1,36 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
+
+template<typename T> 
+class sp { 
+public: 
+    sp() 
+    {
+	cout<<__func__<<setw(3)<<__LINE__<<endl;
+	m_ptr = NULL;
+    }
+ 
+    sp(T* other) 
+    {
+	cout<<__func__<<setw(3)<<__LINE__<<setw(3)<<" copy constructor"<<endl;
+	m_ptr = other;
+    }
+ 
+    ~sp() 
+    {
+	cout<<__func__<<setw(3)<<__LINE__<<endl;
+    }
+ 
+    operator T* () 
+    { 
+	cout<<__func__<<setw(3)<<__LINE__<<endl;
+        return NULL; 
+    } 
+private:
+    T* m_ptr;
+};
+
 
 class B1
 {
@@ -61,6 +92,12 @@ public:
               B2::print();
               cout<<"A.print()"<<a<<","<<bb.getb3()<<endl;
        }
+       
+       sp<B1> returnb1(void)
+       {
+	    cout<<__func__<<endl<<__LINE__<<endl;
+	    return this;
+       }
 private:
        int a;
        B3 bb;
@@ -72,6 +109,6 @@ int main(void)
        A aa(1, 2, 3, 4);
        aa.print();      
        cout<<"&aa="<<&aa<<endl;
-
+       sp<B1> s = ff.returnb1();
        return 0;
 }

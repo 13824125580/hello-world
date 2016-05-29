@@ -1,0 +1,6 @@
+*.out
+*.map
+*.dis
+.*
+!.gitignore
+*.o
