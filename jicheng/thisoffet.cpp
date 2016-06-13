@@ -13,6 +13,11 @@ public:
        {
               cout<<"B1.print()"<<b1<<endl;
        }
+       virtual int b1_virt(void)
+       {
+		cout<<"father b1 virtual"<<endl;
+		return 0;
+       }
 private:
        int b1;
 };
@@ -74,6 +79,13 @@ public:
 		cout<<__func__<<"   "<<__LINE__<<"   "<<this<<endl;
 		return this;
        }
+
+       virtual int b1_virt(void)
+       {
+		cout<<"child b1 virtual"<<endl;
+		B2::print();
+		return 0;
+       }
 private:
        int a;
        B3 bb;
@@ -88,5 +100,9 @@ int main()
 
        cout<<"father b2 = "<<aa.return_fatherB2()<<endl;
        cout<<"father b1 = "<<aa.return_fatherB1()<<endl;
+
+       B1* pb1;
+       pb1 = &aa;
+       pb1->b1_virt();
        return 0;
 }
