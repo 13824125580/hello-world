@@ -28,6 +28,8 @@ public:
        B2(int i)
        {
               b2 = i;
+	      dummy0 = 0x5a5a5a5a;
+	      dummy1 = 0xa5a5a5a5;
               cout<<"构造函数 B2."<<i<< endl;
        }
        void print()
@@ -36,6 +38,7 @@ public:
        }
 private:
        int b2;
+public:
        int dummy0;
        int dummy1;
 };
@@ -84,6 +87,7 @@ public:
        {
 		cout<<"child b1 virtual"<<endl;
 		B2::print();
+		cout<<"dummy0 = 0x"<<hex<<dummy0<<endl<<"dummy1 = 0x" <<hex<<dummy1<<endl;
 		return 0;
        }
 private:
