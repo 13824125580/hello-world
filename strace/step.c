@@ -23,7 +23,7 @@ ptrace(PTRACE_TRACEME, 0, 0, 0);
 *  must be called in order to allow the
 *  control over the child process
 */
-execl("/bin/ls", "ls", NULL);
+execl("./HelloWorld", "ls", NULL);
 /*
 *  executes the program and causes
 *  the child to stop and send a signal
