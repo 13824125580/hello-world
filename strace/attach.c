@@ -8,6 +8,7 @@
 #include <unistd.h>
 int main(int argc, char *argv[])
 { 
+    int val;
     pid_t traced_process;
     struct user_regs_struct regs;
     long ins;
@@ -19,8 +20,10 @@ int main(int argc, char *argv[])
     traced_process = atoi(argv[1]);
     ptrace(PTRACE_ATTACH, traced_process, 
            NULL, NULL);
-    wait(NULL);
-    while(1) sleep(1);
+    wait(&val);
+   // while(1) sleep(1);
+    if(WIFSTOPPED(val))
+         printf("signal stopped.\n");
     ptrace(PTRACE_GETREGS, traced_process, 
            NULL, &regs);
     ins = ptrace(PTRACE_PEEKTEXT, traced_process, 
