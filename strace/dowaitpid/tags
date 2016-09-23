@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DBG	bind.c	13;"	d	file:
+DBG	clone.c	15;"	d	file:
+DBG	setbkt.c	12;"	d	file:
+DBG	threadexec.c	4;"	d	file:
+PTRACE_EVENT_STOP	clone.c	89;"	d	file:
+STACK_SIZE	clone.c	14;"	d	file:
+THREAD_MAX_NUM	bind.c	12;"	d	file:
+_GNU_SOURCE	clone.c	1;"	d	file:
+_GNU_SOURCE	cpuaffinity.c	1;"	d	file:
+__USE_GNU	bind.c	7;"	d	file:
+fun	sigchild.c	/^void fun()$/;"	f
+getdata	setbkt.c	/^void getdata(pid_t child, long addr, char *str, int len)$/;"	f	signature:(pid_t child, long addr, char *str, int len)
+long_size	setbkt.c	/^const int long_size = sizeof(long);$/;"	v
+main	bind.c	/^int main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+main	clone.c	/^int main(void)$/;"	f	signature:(void)
+main	cpuaffinity.c	/^int main(void)$/;"	f	signature:(void)
+main	main.c	/^int main(void)$/;"	f	signature:(void)
+main	setbkt.c	/^int main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+main	sigchild.c	/^int main(void)$/;"	f	signature:(void)
+main	threadexec.c	/^int main(void)$/;"	f	signature:(void)
+main	trap.c	/^int main(void)$/;"	f	signature:(void)
+main	waitpid.c	/^int main(int argc, char*argv[])$/;"	f	signature:(int argc, char*argv[])
+main_thread	clone.c	/^int main_thread(void *ptr)$/;"	f	signature:(void *ptr)
+num	bind.c	/^int num = 0;$/;"	v
+putdata	setbkt.c	/^void putdata(pid_t child, long addr, char *str, int len)$/;"	f	signature:(pid_t child, long addr, char *str, int len)
+sig_chld	sigchild.c	/^void sig_chld(int signo)$/;"	f	signature:(int signo)
+sig_chld1	sigchild.c	/^void sig_chld1(int signo)$/;"	f	signature:(int signo)
+sig_stop_handler	main.c	/^void sig_stop_handler(int signo)$/;"	f	signature:(int signo)
+std	sigchild.c	/^using namespace std;$/;"	v
+thread_1	threadexec.c	/^void thread_1(void)$/;"	f	signature:(void)
+threadfun	bind.c	/^void* threadfun(void *arg)$/;"	f	signature:(void *arg)
