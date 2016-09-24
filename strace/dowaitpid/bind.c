@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 	{
 		tid[i] = i;
 //		if( i == 0)
-		    pthread_create(&thread[i], &attr0, threadfun, (void*)&tid[i]);
+		    pthread_create(&thread[i], /*&attr0*/NULL, threadfun, (void*)&tid[i]);
 //		else
 //		    pthread_create(&thread[i], NULL, threadfun, (void*)&tid[i]);
 	}
