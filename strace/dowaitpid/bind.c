@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 	memset(&attr0, 0x00, sizeof(attr0));
 
     pthread_attr_init(&attr0);
-	param.sched_priority = 99;
+	param.sched_priority = 1; //0 is the highest of rt, 99 is the lowerst.
 	pthread_attr_setschedpolicy(&attr0, SCHED_RR);
 	pthread_attr_setschedparam(&attr0, &param); 
 	pthread_attr_setinheritsched(&attr0, PTHREAD_EXPLICIT_SCHED);
@@ -79,11 +79,12 @@ int main(int argc, char* argv[])
 	{
 		tid[i] = i;
 //		if( i == 0)
-		    pthread_create(&thread[i], /*&attr0*/NULL, threadfun, (void*)&tid[i]);
+		    pthread_create(&thread[i], &attr0, threadfun, (void*)&tid[i]);
 //		else
 //		    pthread_create(&thread[i], NULL, threadfun, (void*)&tid[i]);
 	}
 
+    pthread_exit(NULL);
 	for(i = 0; i < num; i ++)
 	{
 		pthread_join(thread[i], NULL);

@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <sys/stat.h>
- 
+#include <string.h>
  char buf[10];
  char *ptr;
   
@@ -24,5 +24,6 @@
 	            return 0;
 	   }
       *ptr = 0x12;
+      memset(ptr + 1, 0xaa, 9);
        return 0;
   }
