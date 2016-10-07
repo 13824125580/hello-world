@@ -1,0 +1,5 @@
+1. You must compile  jpeg and png library ,and install it firstly.
+2. You should use ./configure --enable-pngsupport --enable-jpegsupport 
+   before compile libminigui-gpl-3.0.12.
+3. This software will support 32bit and 64bit.
+4. If you have any question, please talk with me using QQ:848416881

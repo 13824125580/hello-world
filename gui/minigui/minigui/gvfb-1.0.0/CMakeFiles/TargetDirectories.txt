@@ -1,0 +1,13 @@
+/home/czl/minigui/minigui/gvfb-1.0.0/CMakeFiles/install.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/CMakeFiles/list_install_components.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/CMakeFiles/install/strip.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/CMakeFiles/install/local.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/CMakeFiles/rebuild_cache.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/CMakeFiles/edit_cache.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/install.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/list_install_components.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/rebuild_cache.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/gvfb.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/edit_cache.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/install/strip.dir
+/home/czl/minigui/minigui/gvfb-1.0.0/src/CMakeFiles/install/local.dir
