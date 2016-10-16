@@ -91,11 +91,11 @@ static void * timer_vsync(void* arg)
     struct fb_var_screeninfo vinfo;
     struct fb_fix_screeninfo finfo;
     int screensize;
-static void framebuffer_init(void)
+void framebuffer_init(void)
 {
     int fd;
 
-    fd = open("/dev/fb0", O_RDWR);
+    fd = open("/dev/fb1", O_RDWR);
     if(fd < 0)
     {
         printf("cant open fb0.\n");
@@ -128,7 +128,7 @@ static void framebuffer_init(void)
 
 void lcd_sim_init(int argc, char **argv) 
 {
-    framebuffer_init();
+    //framebuffer_init();
     pthread_t tid;
     argcc = argc;
     argvv = argv;

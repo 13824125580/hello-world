@@ -16,9 +16,11 @@ void* demo_thread(void *arg)
 }
 
 //Ö÷º¯Êý	
+extern framebuffer_init(void);
 int main(int argc, char *argv[])
 { 
     pthread_t tid;
+    framebuffer_init();
     pthread_create(&tid,NULL,demo_thread,NULL);
     
     printf("argc = %d, argv[0] = %s.\n", argc, argv[0]);
