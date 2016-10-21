@@ -95,7 +95,7 @@ void framebuffer_init(void)
 {
     int fd;
 
-    fd = open("/dev/fb1", O_RDWR);
+    fd = open("/dev/fb0", O_RDWR);
     if(fd < 0)
     {
         printf("cant open fb0.\n");

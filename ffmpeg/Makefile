@@ -1,2 +1,2 @@
 all:
-	g++ player.cpp -lavcodec -lavformat -lavutil -lSDL -lswscale
+	g++ player.cpp -g -lavcodec -lavformat -lavutil -lSDL -lswscale
