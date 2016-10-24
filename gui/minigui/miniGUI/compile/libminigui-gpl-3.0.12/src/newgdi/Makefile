@@ -98,7 +98,7 @@ AUTOMAKE = ${SHELL} /WorkSpace/miniGUI/compile/libminigui-gpl-3.0.12/missing --r
 AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -D_WITH_TARGET_NONE -D__MINIGUI_LIB__ -D_REENTRANT -D_MG_ENABLE_SPLASH=1 -D_MG_ENABLE_SCREENSAVER=1 -Wall -Wstrict-prototypes -pipe -D_GNU_SOURCE
+CFLAGS = -g3 -gdwarf-2 -O0 -D_WITH_TARGET_NONE -D__MINIGUI_LIB__ -D_REENTRANT -D_MG_ENABLE_SPLASH=1 -D_MG_ENABLE_SCREENSAVER=1 -Wall -Wstrict-prototypes -pipe -D_GNU_SOURCE
 CPP = gcc -E
 CPPFLAGS = 
 CYGPATH_W = echo

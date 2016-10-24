@@ -86,6 +86,7 @@ static int HelloWinProc(HWND hWnd, int message, WPARAM wParam, LPARAM lParam)
         case MSG_LBUTTONDOWN:
             strcpy (msg_text, HL_ST_LBD);
             InvalidateRect (hWnd, &msg_rc, TRUE);
+	    MessageBox(hWnd, "helloworld", "hello", MB_OK);
             break;
 
         case MSG_LBUTTONUP:
@@ -183,9 +184,16 @@ int MiniGUIMain (int argc, const char* argv[])
 
     ShowWindow(hMainWnd, SW_SHOWNORMAL);
 
+#if 1 
     while (GetMessage(&Msg, hMainWnd)) {
         TranslateMessage(&Msg);
         DispatchMessage(&Msg);
+    }
+#endif
+
+    while(1)
+    {
+	sleep(1);
     }
 
     MainWindowThreadCleanup (hMainWnd);
