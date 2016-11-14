@@ -1,13 +1,1 @@
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/CMakeFiles/install.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/CMakeFiles/list_install_components.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/CMakeFiles/install/local.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/CMakeFiles/install/strip.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/CMakeFiles/edit_cache.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/CMakeFiles/rebuild_cache.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/install.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/list_install_components.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/rebuild_cache.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/gvfb.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/install/local.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/edit_cache.dir
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/install/strip.dir
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/CMakeFiles/gvfb.dir

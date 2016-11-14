@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/deviceskin.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/deviceskin.c
 stdio.h
 -
 stdlib.h
@@ -20,11 +20,11 @@ sys/types.h
 sys/stat.h
 -
 deviceskin.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
 limits.h
 -
 windows.h
@@ -32,11 +32,11 @@ windows.h
 gtk/gtk.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/getopt_long.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/getopt_long.h
 unistd.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.c
 sys/types.h
 -
 gtk/gtk.h
@@ -46,21 +46,21 @@ gtk/gtkaction.h
 winsock2.h
 -
 gvfb_win32.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
 sys/socket.h
 -
 gvfb_linux.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_view.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
 gvfb_callbacks.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
 glib.h
 -
 gtk/gtk.h
@@ -68,7 +68,7 @@ gtk/gtk.h
 assert.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.c
 stdio.h
 -
 stdlib.h
@@ -82,9 +82,9 @@ assert.h
 glib.h
 -
 gvfb_errmsg.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
 stdio.h
 -
 stdlib.h
@@ -96,7 +96,7 @@ gdk/gdk.h
 windows.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.c
 stdio.h
 -
 string.h
@@ -108,7 +108,7 @@ time.h
 assert.h
 -
 gvfb_win32.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
 sys/types.h
 -
 sys/time.h
@@ -118,21 +118,21 @@ sys/socket.h
 unistd.h
 -
 gvfb_linux.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_input.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
 gtk/gtk.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_interface.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_interface.c
 stdio.h
 -
 stdlib.h
@@ -150,13 +150,13 @@ unistd.h
 strings.h
 -
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_callbacks.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_interface.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_interface.h
 glib.h
 -
 gtk/gtk.h
@@ -164,7 +164,7 @@ gtk/gtk.h
 assert.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.c
 stdio.h
 -
 stdlib.h
@@ -202,21 +202,21 @@ X11/XKBlib.h
 assert.h
 -
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_linux.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
 glib.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.c
 stdio.h
 -
 stdlib.h
@@ -238,7 +238,7 @@ assert.h
 winsock2.h
 -
 gvfb_win32.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
 sys/socket.h
 -
 sys/ipc.h
@@ -256,29 +256,29 @@ signal.h
 errno.h
 -
 gvfb_linux.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_view.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
 gvfb_input.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
 gvfb_errmsg.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gtk/gtk.h
 -
 gdk/gdk.h
 -
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_option.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_option.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.c
 stdio.h
 -
 stdlib.h
@@ -290,31 +290,31 @@ assert.h
 unistd.h
 -
 skin.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/skin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/skin.h
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_callbacks.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_callbacks.h
 gvfb_interface.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_interface.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_interface.h
 gvfb_input.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
 gvfb_view.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
 gtk/gtk.h
 -
 gdk/gdk.h
 -
 gvfbhdr.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
 stdio.h
 -
 stdlib.h
@@ -324,15 +324,15 @@ windows.h
 gtk/gtk.h
 -
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfbhdr.h
 gtk/gtk.h
 -
 gdk/gdk.h
 -
 gvfb_option.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_option.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_option.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/main.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/main.c
 stdio.h
 -
 stdlib.h
@@ -346,27 +346,27 @@ assert.h
 glib.h
 -
 getopt_long.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/getopt_long.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/getopt_long.h
 gvfb_win32.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_win32.h
 getopt.h
 -
 gvfb_linux.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_linux.h
 skin.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/skin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/skin.h
 gvfb_main.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_main.h
 gvfb_input.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
 gvfb_view.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_view.h
 gvfb_errmsg.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_errmsg.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/skin.c
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/skin.c
 stdio.h
 -
 stdlib.h
@@ -378,25 +378,19 @@ assert.h
 gtk/gtk.h
 -
 deviceskin.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
 skin.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/skin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/skin.h
 gvfb_input.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_input.h
 gvfb_log.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/gvfb_log.h
 
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/skin.h
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/skin.h
 gtk/gtk.h
 -
 deviceskin.h
-/WorkSpace/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
-
-/usr/include/atk-1.0/atk/atk-enum-types.h
-atk/atkversion.h
--
-glib-object.h
--
+/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/gvfb-1.0.0/src/deviceskin.h
 
 /usr/include/atk-1.0/atk/atk.h
 atk/atkobject.h
@@ -408,8 +402,6 @@ atk/atkcomponent.h
 atk/atkdocument.h
 -
 atk/atkeditabletext.h
--
-atk/atk-enum-types.h
 -
 atk/atkgobjectaccessible.h
 -
@@ -428,8 +420,6 @@ atk/atknoopobjectfactory.h
 atk/atkobjectfactory.h
 -
 atk/atkplug.h
--
-atk/atkrange.h
 -
 atk/atkregistry.h
 -
@@ -450,8 +440,6 @@ atk/atkstateset.h
 atk/atkstreamablecontent.h
 -
 atk/atktable.h
--
-atk/atktablecell.h
 -
 atk/atktext.h
 -
@@ -517,12 +505,8 @@ atk/atkutil.h
 /usr/include/atk-1.0/atk/atkmisc.h
 glib-object.h
 -
-atk/atkversion.h
--
 
 /usr/include/atk-1.0/atk/atknoopobject.h
-atk/atkversion.h
--
 
 /usr/include/atk-1.0/atk/atknoopobjectfactory.h
 atk/atkobjectfactory.h
@@ -530,8 +514,6 @@ atk/atkobjectfactory.h
 
 /usr/include/atk-1.0/atk/atkobject.h
 glib-object.h
--
-atk/atkversion.h
 -
 atk/atkstate.h
 -
@@ -545,14 +527,6 @@ atk/atkobject.h
 -
 
 /usr/include/atk-1.0/atk/atkplug.h
-atk/atkversion.h
--
-
-/usr/include/atk-1.0/atk/atkrange.h
-glib-object.h
--
-atk/atkversion.h
--
 
 /usr/include/atk-1.0/atk/atkregistry.h
 glib-object.h
@@ -564,8 +538,6 @@ atkobjectfactory.h
 glib-object.h
 -
 atk/atkrelationtype.h
--
-atk/atkversion.h
 -
 
 /usr/include/atk-1.0/atk/atkrelationset.h
@@ -585,13 +557,9 @@ atk/atkobject.h
 -
 
 /usr/include/atk-1.0/atk/atksocket.h
-atk/atkversion.h
--
 
 /usr/include/atk-1.0/atk/atkstate.h
 glib-object.h
--
-atk/atkversion.h
 -
 
 /usr/include/atk-1.0/atk/atkstateset.h
@@ -610,10 +578,6 @@ atk/atkobject.h
 atk/atkobject.h
 -
 
-/usr/include/atk-1.0/atk/atktablecell.h
-atk/atkobject.h
--
-
 /usr/include/atk-1.0/atk/atktext.h
 glib-object.h
 -
@@ -629,12 +593,8 @@ atk/atkobject.h
 /usr/include/atk-1.0/atk/atkvalue.h
 atk/atkobject.h
 -
-atk/atkrange.h
--
 
 /usr/include/atk-1.0/atk/atkversion.h
-glib.h
--
 
 /usr/include/atk-1.0/atk/atkwindow.h
 atk/atkobject.h
@@ -659,8 +619,6 @@ glib-object.h
 -
 gdk-pixbuf/gdk-pixbuf-core.h
 -
-
-/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h
 glib.h
@@ -732,8 +690,6 @@ gdk-pixbuf/gdk-pixbuf-io.h
 gdk-pixbuf/gdk-pixbuf-loader.h
 -
 gdk-pixbuf/gdk-pixbuf-enum-types.h
--
-gdk-pixbuf/gdk-pixbuf-autocleanups.h
 -
 
 /usr/include/glib-2.0/gio/gaction.h
@@ -820,10 +776,6 @@ gio/giotypes.h
 unistd.h
 -
 sys/types.h
--
-
-/usr/include/glib-2.0/gio/gdatagrambased.h
-gio/giotypes.h
 -
 
 /usr/include/glib-2.0/gio/gdatainputstream.h
@@ -928,18 +880,6 @@ gio/giotypes.h
 gio/giotypes.h
 -
 
-/usr/include/glib-2.0/gio/gdtlsclientconnection.h
-gio/gdtlsconnection.h
--
-
-/usr/include/glib-2.0/gio/gdtlsconnection.h
-gio/gdatagrambased.h
--
-
-/usr/include/glib-2.0/gio/gdtlsserverconnection.h
-gio/gdtlsconnection.h
--
-
 /usr/include/glib-2.0/gio/gemblem.h
 gio/gioenums.h
 -
@@ -1022,8 +962,6 @@ gio/giotypes.h
 gio/giotypes.h
 -
 
-/usr/include/glib-2.0/gio/gio-autocleanups.h
-
 /usr/include/glib-2.0/gio/gio.h
 gio/giotypes.h
 -
@@ -1065,8 +1003,6 @@ gio/gconverteroutputstream.h
 -
 gio/gcredentials.h
 -
-gio/gdatagrambased.h
--
 gio/gdatainputstream.h
 -
 gio/gdataoutputstream.h
@@ -1096,12 +1032,6 @@ gio/gdbusserver.h
 gio/gdbusutils.h
 -
 gio/gdrive.h
--
-gio/gdtlsclientconnection.h
--
-gio/gdtlsconnection.h
--
-gio/gdtlsserverconnection.h
 -
 gio/gemblemedicon.h
 -
@@ -1207,8 +1137,6 @@ gio/gsimpleactiongroup.h
 -
 gio/gsimpleasyncresult.h
 -
-gio/gsimpleiostream.h
--
 gio/gsimplepermission.h
 -
 gio/gsocketaddressenumerator.h
@@ -1307,12 +1235,6 @@ gio/gdbusmenumodel.h
 -
 gio/gnotification.h
 -
-gio/glistmodel.h
--
-gio/gliststore.h
--
-gio/gio-autocleanups.h
--
 
 /usr/include/glib-2.0/gio/gioenums.h
 glib-object.h
@@ -1350,14 +1272,6 @@ gio/gioerror.h
 
 /usr/include/glib-2.0/gio/giotypes.h
 gio/gioenums.h
--
-
-/usr/include/glib-2.0/gio/glistmodel.h
-gio/giotypes.h
--
-
-/usr/include/glib-2.0/gio/gliststore.h
-gio/giotypes.h
 -
 
 /usr/include/glib-2.0/gio/gloadableicon.h
@@ -1414,8 +1328,6 @@ gio/giotypes.h
 
 /usr/include/glib-2.0/gio/gnotification.h
 gio/giotypes.h
--
-gio/gioenums.h
 -
 
 /usr/include/glib-2.0/gio/goutputstream.h
@@ -1496,12 +1408,6 @@ gactionmap.h
 
 /usr/include/glib-2.0/gio/gsimpleasyncresult.h
 gio/giotypes.h
--
-
-/usr/include/glib-2.0/gio/gsimpleiostream.h
-gio/giotypes.h
--
-gio/giostream.h
 -
 
 /usr/include/glib-2.0/gio/gsimplepermission.h
@@ -1677,8 +1583,6 @@ gobject/gvaluearray.h
 -
 gobject/gvaluetypes.h
 -
-gobject/gobject-autocleanups.h
--
 
 /usr/include/glib-2.0/glib.h
 glib/galloca.h
@@ -1828,8 +1732,6 @@ glib/deprecated/gmain.h
 glib/deprecated/grel.h
 -
 glib/deprecated/gthread.h
--
-glib/glib-autocleanups.h
 -
 
 /usr/include/glib-2.0/glib/deprecated/gallocator.h
@@ -1991,12 +1893,8 @@ glib/gstring.h
 -
 
 /usr/include/glib-2.0/glib/gkeyfile.h
-glib/gbytes.h
--
 glib/gerror.h
 -
-
-/usr/include/glib-2.0/glib/glib-autocleanups.h
 
 /usr/include/glib-2.0/glib/glist.h
 glib/gmem.h
@@ -2031,7 +1929,7 @@ glib/gslist.h
 -
 
 /usr/include/glib-2.0/glib/gmem.h
-glib/gutils.h
+glib/gtypes.h
 -
 
 /usr/include/glib-2.0/glib/gmessages.h
@@ -2040,8 +1938,6 @@ stdarg.h
 glib/gtypes.h
 -
 glib/gmacros.h
--
-glib/gvariant.h
 -
 
 /usr/include/glib-2.0/glib/gnode.h
@@ -2059,8 +1955,6 @@ glib/gtypes.h
 -
 
 /usr/include/glib-2.0/glib/gpoll.h
-glibconfig.h
--
 glib/gtypes.h
 -
 
@@ -2155,8 +2049,6 @@ glib/gatomic.h
 -
 glib/gerror.h
 -
-glib/gutils.h
--
 
 /usr/include/glib-2.0/glib/gthreadpool.h
 glib/gthread.h
@@ -2213,6 +2105,8 @@ glib/gbytes.h
 -
 
 /usr/include/glib-2.0/glib/gvarianttype.h
+glib/gmessages.h
+-
 glib/gtypes.h
 -
 
@@ -2255,8 +2149,6 @@ glib.h
 -
 
 /usr/include/glib-2.0/gobject/gmarshal.h
-
-/usr/include/glib-2.0/gobject/gobject-autocleanups.h
 
 /usr/include/glib-2.0/gobject/gobject.h
 gobject/gtype.h
@@ -4159,6 +4051,8 @@ pango/pango-glyph.h
 -
 pango/pango-script.h
 -
+gmodule.h
+-
 
 /usr/include/pango-1.0/pango/pango-enum-types.h
 glib-object.h
@@ -4332,7 +4226,7 @@ pango/pango.h
 cairo.h
 -
 
-/usr/lib/i386-linux-gnu/glib-2.0/include/glibconfig.h
+/usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
 glib/gmacros.h
 -
 limits.h
@@ -4340,5 +4234,5 @@ limits.h
 float.h
 -
 
-/usr/lib/i386-linux-gnu/gtk-2.0/include/gdkconfig.h
+/usr/lib/x86_64-linux-gnu/gtk-2.0/include/gdkconfig.h
 

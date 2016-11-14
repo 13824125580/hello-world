@@ -553,7 +553,7 @@
 /* #undef _MGIMAGE_PCX */
 
 /* Define if support PNG bmp file format */
-/* #undef _MGIMAGE_PNG */
+#define _MGIMAGE_PNG 1
 
 /* Define if support TGA bmp file format */
 /* #undef _MGIMAGE_TGA */

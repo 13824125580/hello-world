@@ -89,7 +89,7 @@ static void dc_InitMemDCFrom (PDC pdc, const PDC pdc_ref);
 static void dc_InitScreenDC (PDC pdc, GAL_Surface* surface);
 
 /************************** inline functions *********************************/
-void WndRect(HWND hWnd, PRECT prc)
+inline void WndRect(HWND hWnd, PRECT prc)
 {
     PCONTROL pParent;
     PCONTROL pCtrl;
@@ -122,7 +122,7 @@ void WndRect(HWND hWnd, PRECT prc)
     }
 }
 
-void WndClientRect(HWND hWnd, PRECT prc)
+inline void WndClientRect(HWND hWnd, PRECT prc)
 {
     PCONTROL pCtrl;
     PCONTROL pParent;

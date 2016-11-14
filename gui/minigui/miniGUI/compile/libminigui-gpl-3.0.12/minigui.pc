@@ -7,6 +7,6 @@ Name: MiniGUI
 Description: A windowing system for embedded system.
 Version: 3.0.12
 Requires:
-Libs: -L${libdir} -lminigui_ths  -ljpeg -ldl -lm -lpthread
+Libs: -L${libdir} -lminigui_ths  -ljpeg -lpng -ldl -lm -lpthread
 Libs.private:
 Cflags: -I${includedir} 

@@ -536,7 +536,7 @@ static inline void bmpGet256CScanline (BYTE* bits, BYTE* scanline,
     memcpy (scanline, bits, pixels);
 }
 
-void pixel2rgb (gal_pixel pixel, GAL_Color* color, int depth)
+inline void pixel2rgb (gal_pixel pixel, GAL_Color* color, int depth)
 {
     switch (depth) {
     case 24:

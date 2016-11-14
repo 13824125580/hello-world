@@ -438,11 +438,11 @@ Copyright (C) 2009 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/WorkSpace/miniGUI/compile/minigui-res-be-3.0.12'
+ac_pwd='/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
-AWK='mawk'
+AWK='gawk'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
 ac_need_defaults=:
@@ -601,19 +601,19 @@ S["DEV_FONTS"]="6x12-iso8859-1.bin 8x16-iso8859-1.bin song-12-gb2312.bin song-16
 "atin-gb2312-12.upf fmfsong-latin-gb2312-16.upf fmsong-latin-gbk-12.upf fmsong-latin-gbk-16.upf fmhei-latin-gbk-16.upf unifont_160_50.upf"
 S["am__untar"]="${AMTAR} xf -"
 S["am__tar"]="${AMTAR} chof - \"$$tardir\""
-S["AMTAR"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/missing --run tar"
+S["AMTAR"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/missing --run tar"
 S["am__leading_dot"]="."
-S["AWK"]="mawk"
+S["AWK"]="gawk"
 S["mkdir_p"]="/bin/mkdir -p"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/install-sh"
-S["MAKEINFO"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /WorkSpace/miniGUI/compile/minigui-res-be-3.0.12/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/install-sh"
+S["MAKEINFO"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/minigui-res-be-3.0.12/missing --run aclocal-1.11"
 S["VERSION"]="3.0.12"
 S["PACKAGE"]="minigui-res-be"
 S["CYGPATH_W"]="echo"

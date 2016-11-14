@@ -217,8 +217,8 @@ struct tagDC
 extern DC __mg_screen_dc;
 extern DC __mg_screen_sys_dc;
 
-/*inline*/ void WndRect(HWND hWnd, PRECT prc);
-/*inline*/ void WndClientRect(HWND hWnd, PRECT prc);
+inline void WndRect(HWND hWnd, PRECT prc);
+inline void WndClientRect(HWND hWnd, PRECT prc);
 
 /* This function convert HDC to PDC. */
 static inline PDC dc_HDC2PDC (HDC hdc)
