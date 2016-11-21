@@ -1,0 +1,350 @@
+syntax on
+set number
+set hlsearch
+set autoindent
+let mapleader=","
+
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR> 
+set nocompatible              " be iMproved  
+filetype off                  " required!  
+set nocp  
+filetype plugin on  
+  
+set rtp+=~/.vim/bundle/vundle/  
+call vundle#rc()  
+  
+" let Vundle manage Vundle  
+" required!   
+Bundle 'gmarik/vundle'  
+  
+" 可以通过以下四种方式指定插件的来源  
+" a) 指定Github中vim-scripts仓库中的插件，直接指定插件名称即可，插件明中的空格使用“-”代替。  
+Bundle 'L9'  
+  
+" b) 指定Github中其他用户仓库的插件，使用“用户名/插件名称”的方式指定  
+Bundle 'tpope/vim-fugitive'  
+Bundle 'Lokaltog/vim-easymotion'  
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}  
+Bundle 'tpope/vim-rails.git'  
+  
+" c) 指定非Github的Git仓库的插件，需要使用git地址  
+Bundle 'git://git.wincent.com/command-t.git'  
+  
+" d) 指定本地Git仓库中的插件  
+"Bundle 'file:///Users/gmarik/path/to/plugin'  
+  
+filetype plugin indent on     " required!  
+"Bundle 'wesleyche/Trinity'
+Bundle 'STL-improved'
+Plugin 'scrooloose/syntastic'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
+Bundle 'molokai'
+Bundle 'evening_2'
+Bundle 'kien/ctrlp.vim'
+Bundle 'AutoClose'
+Bundle 'matchit.zip'
+Bundle 'less.vim'
+Bundle 'The-NERD-tree'
+Bundle 'The-NERD-Commenter'
+Bundle 'godlygeek/tabular'
+Bundle 'qiyu2580/vimcdoc'
+Bundle 'vim-scripts/Emmet.vim'
+Bundle 'auto_mkdir'
+Bundle 'UltiSnips'
+Bundle 'hallettj/jslint.vim'
+Bundle 'EasyMotion'
+Bundle 'Yggdroot/indentLine'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'vcscommand.vim'
+Bundle 'mhinz/vim-startify'
+Bundle 'terryma/vim-expand-region'
+Bundle 'tpope/vim-surround'
+Bundle 'rking/ag.vim'
+Bundle 'taiansu/nerdtree-ag'
+Bundle 'heavenshell/vim-jsdoc'
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/vimshell.vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'othree/xml.vim'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'einars/js-beautify'
+Bundle 'vim-scripts/winmanager'
+Bundle 'bling/vim-airline' 
+Bundle 'taglist.vim'
+Bundle 'fholgado/minibufexpl.vim' 
+Bundle 'SuperTab'
+Bundle 'vimwiki'
+Bundle 'bufexplorer.zip'
+Bundle 'matrix.vim--Yang'
+Bundle 'FencView.vim'
+Bundle 'Conque-Shell'
+Bundle 'Vimpress'
+Bundle 'Markdown'
+Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
+Bundle 'c.vim'
+Bundle 'snipMate'
+Bundle 'EasyGrep'
+Bundle 'OmniCppComplete'
+
+" Under linux need exec 'dos2unix  ~/.vim/bundle/QFixToggle/plugin/qfixtoggle.vim'
+Bundle 'QFixToggle'
+
+Bundle 'Color-Sampler-Pack'
+Bundle 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+Plugin 'jistr/vim-nerdtree-tabs'
+Bundle 'txt.vim'
+Bundle 'mru.vim'
+"Bundle 'YankRing.vim'
+Bundle 'maxbrunsfeld/vim-yankstack'
+Bundle 'DoxygenToolkit.vim'
+Bundle 'tczengming/headerGatesAdd.vim'
+"Bundle 'ShowMarks'
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'grep.vim'
+Bundle 'mbbill/undotree'
+" Fast file navigation
+Bundle 'wincent/Command-T'
+Bundle 'a.vim'
+Plugin 'tmhedberg/SimpylFold'
+Bundle 'wesleyche/SrcExpl'
+Bundle 'motemen/git-vim'
+Bundle 'kien/tabman.vim'
+"Bundle 'fisadev/vim-debug.vim'
+Bundle 'vim-scripts/TxtBrowser'
+
+let g:SimpylFold_docstring_preview=1
+let g:EasyGrepMode = 2     " All:0, Open Buffers:1, TrackExt:2, 
+let g:EasyGrepCommand = 0  " Use vimgrep:0, grepprg:1
+let g:EasyGrepRecursive  = 1 " Recursive searching
+let g:EasyGrepIgnoreCase = 1 " not ignorecase:0
+let g:EasyGrepFilesToExclude = "*.bak, *~, cscope.*, *.a, *.o, *.pyc, *.bak"
+
+let g:SuperTabDefaultCompletionType="context"
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+let g:miniBufExplMoreThanOne=0 
+map <F11> :MBEbp<CR> 
+
+let Tlist_Ctags_Cmd='ctags' 
+let Tlist_Show_One_File=1 
+"不同时显示多个文件的tag，只显示当前文件的 let Tlist_WinWidt =28 
+"设置taglist的宽度 let Tlist_Exit_OnlyWindow=1 
+"如果taglist窗口是最后1个窗口，则退出vim 
+"let Tlist_Use_Right_Window=1 "在右边窗口中显示taglist窗口 
+let Tlist_Use_Left_Windo =1 "在左边窗口中显示taglist窗口
+
+set laststatus=2
+let &termencoding=&encoding 
+set fileencodings=utf(8),gbk
+let g:NERDTree_title="[NERDTree]"
+let g:winManagerWindowLayout="NERDTree|TagList" 
+"let g:winManagerWindowLayout="FileExplorer|TagList" 
+function! NERDTree_Start() 
+	exec 'NERDTree' 
+endfunction 
+function! NERDTree_IsValid() 
+	return 1 
+endfunction 
+nmap wm :WMToggle<CR>
+let NERDTreeWinPos='left'
+let NERDTreeWinSize=30
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeDirArrows=0
+map <F2> :NERDTreeToggle<CR>
+
+map <F8> :TagbarToggle<CR>
+set omnifunc=syntaxcomplete#Complete
+set tags+=./../tags
+
+syntax on
+
+" Javascript syntax hightlight
+ syntax enable
+
+" Set syntax highlighting for specific file types
+autocmd BufRead,BufNewFile Appraisals set filetype=ruby
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd Syntax javascript set syntax=jquery
+
+set t_Co=256                " Explicitly tell vim that the terminal supports 256 colors, need before setting the colorscheme
+" Color scheme
+
+" solarized theme
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
+if has('gui_running')
+      set background=dark
+      colorscheme solarized
+else
+      colorscheme molokai
+endif
+      
+set background=dark
+
+" vim-powerline
+"set laststatus=2            " always have status-line'
+"let g:Powerline_symbols = 'fancy'"
+
+set cursorline   
+set cursorcolumn
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=yellow guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+
+"--------------------------------------------------------------------------
+"vim-airline   
+"--------------------------------------------------------------------------
+"这个是安装字体后 必须设置此项" 
+let g:airline_powerline_fonts = 1   
+               
+"打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+            
+"设置切换Buffer快捷键"
+nnoremap <C-tab> :bn<CR>
+nnoremap <C-s-tab> :bp<CR>
+" 关闭状态显示空白符号计数
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#whitespace#symbol = '!'
+" 设置consolas字体"前面已经设置过
+"set guifont=Consolas\ for\ Powerline\ FixedD:h11
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif         
+              
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒 '
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = '☰'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = '∄'
+let g:airline_symbols.whitespace = 'Ξ'
+
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
+
+" // The switch of the Source Explorer 
+nmap <F5> :SrcExplToggle<CR> 
+
+" // Set the height of Source Explorer window 
+let g:SrcExpl_winHeight = 8 
+
+" // Set 100 ms for refreshing the Source Explorer 
+let g:SrcExpl_refreshTime = 100 
+
+" // Set "Enter" key to jump into the exact definition context 
+" let g:SrcExpl_jumpKey = "<ENTER>" 
+
+" // Set "Space" key for back from the definition context 
+" let g:SrcExpl_gobackKey = "<SPACE>" 
+
+" // In order to avoid conflicts, the Source Explorer should know what plugins
+" // except itself are using buffers. And you need add their buffer names into
+" // below listaccording to the command ":buffers!"
+let g:SrcExpl_pluginList = [ 
+        \ "__Tag_List__", 
+        \ "_NERD_tree_" 
+    \ ] 
+
+" // Enable/Disable the local definition searching, and note that this is not 
+" // guaranteed to work, the Source Explorer doesn't check the syntax for now. 
+" // It only searches for a match with the keyword according to command 'gd' 
+let g:SrcExpl_searchLocalDef = 1 
+
+" // Do not let the Source Explorer update the tags file when opening 
+let g:SrcExpl_isUpdateTags = 0 
+
+" // Use 'Exuberant Ctags' with '--sort=foldcase -R .' or '-L cscope.files' to 
+" // create/update the tags file 
+let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
+
+" // Set "<F12>" key for updating the tags file artificially 
+"let g:SrcExpl_updateTagsKey = "<F12>" 
+
+" // Set "<F3>" key for displaying the previous definition in the jump list 
+"let g:SrcExpl_prevDefKey = "<F3>" 
+
+nnoremap <silent> <F3> :Grep<CR>
+" // Set "<F4>" key for displaying the next definition in the jump list 
+let g:SrcExpl_nextDefKey = "<F4>" 
+nmap <C-H> <C-W>h 
+nmap <C-J> <C-W>j 
+nmap <C-K> <C-W>k 
+nmap <C-L> <C-W>l 
+
+"Below key mappings can replace the Vim feature for jumping to previously visited locations via jump list. 
+
+nmap <C-I> <C-W>j:call g:SrcExpl_Jump()<CR> 
+nmap <C-O> :call g:SrcExpl_GoBack()<CR> 
+set modifiable
+setlocal modifiable 
+set laststatus=2
+set statusline=%{GitBranch()}
+
+"syntax on "syntax highlighting on 
+"filetype plugin on 
+"au BufEnter *.txt setlocal ft=txt
+
+syntax on
+let tlist_txt_settings = 'txt;c:content;f:figures;t:tables'
+au BufRead,BufNewFile *.txt setlocal ft=txt
+
+"========================================================
+" Highlight All Function
+"========================================================
+ syn   match    cFunction "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2
+ syn   match    cFunction "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
+ hi  cFunction         gui =NONE  guifg =#B5A1FF
+
+"========================================================
+" Highlight All Math Operator
+"========================================================
+" C math operators
+ syn   match        cMathOperator     display "[-+\*/%=]"
+" C pointer operators
+ syn   match        cPointerOperator  display "->\|\."
+" C logical   operators - boolean results
+ syn   match        cLogicalOperator  display "[!<>]=\="
+ syn   match        cLogicalOperator  display "=="
+" C bit operators
+ syn   match        cBinaryOperator   display "\(&\||\|\^\|<<\|>>\)=\="
+ syn   match        cBinaryOperator   display "\~"
+ syn   match        cBinaryOperatorError display "\~="
+" More C logical operators - highlight in preference to binary
+ syn   match        cLogicalOperator  display "&&\|||"
+ syn   match        cLogicalOperatorError display "\(&&\|||\)="
+
+" Math Operator
+ hi  cMathOperator             guifg =#3EFFE2
+ hi  cPointerOperator          guifg =#3EFFE2
+ hi  cLogicalOperator          guifg =#3EFFE2
+ hi  cBinaryOperator           guifg =#3EFFE2
+ hi  cBinaryOperatorError      guifg =#3EFFE2
+ hi  cLogicalOperator          guifg =#3EFFE2
+ hi  cLogicalOperatorError     guifg =#3EFFE2
+
+nmap <F4> :execute "cd" expand("%:p:h")<CR> 
+set autochdir
