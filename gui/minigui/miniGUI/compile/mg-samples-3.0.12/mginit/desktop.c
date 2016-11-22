@@ -221,6 +221,7 @@ static void this_paint_desktop(void* context, HDC dc_desktop, const RECT* inv_rc
 static void this_keyboard_handler(void* context, int message, 
 		                               WPARAM wParam, LPARAM lParam)
 {
+    printf("%s line %d, message = %d.wparam = %d, lparam = %d.\n", __func__, __LINE__, message, wParam, lParam);
     switch(message)
     {
         case MSG_DT_KEYDOWN:
@@ -327,6 +328,7 @@ static void this_mouse_handler(void* context, int message,
                         }
                         strcpy (buff, item->path);
                         strcat (buff, item->name);
+			printf("%s line %d,  app = %s.\n", __func__, __LINE__, buff);
                         exec_app_name(buff, item->name, "-layer");
                         break;
                     }

@@ -66,14 +66,14 @@ layer=
 pictrue=res/dialog.png
 
 [dsp-app6]
-path=../graphics/
-name=graphicsex
+path=../lf_skin/
+name=lf_skin
 layer=
 pictrue=res/graphicsex.png
 
 [dsp-app7]
-path=../dbuff/
-name=dbuff
+path=../src/
+name=helloworld
 layer=
 pictrue=res/thaifont.png
 
