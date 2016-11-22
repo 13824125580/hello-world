@@ -14,7 +14,7 @@ library_names=''
 old_library='libdlcustom.al'
 
 # Libraries that this one depends upon.
-dependency_libs=''
+dependency_libs=' -L/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/zlib/lib'
 
 # Version information for libdlcustom.
 current=

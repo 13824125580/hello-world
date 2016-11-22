@@ -55,9 +55,10 @@
 #define __TARGET_UNKNOWN__ 1
 #define _MGLF_RDR_FLAT 1
 #define _MGLF_RDR_SKIN 1
-#define _MGRM_THREADS 1
+#define _MGRM_PROCESSES 1
+#define _LITE_VERSION 1
 #define ETCFILENAME "MiniGUI.cfg"
-#define _MGLIB_SUFFIX "ths"
+#define _MGLIB_SUFFIX "procs"
 #define _HAVE_MATH_LIB 1
 #define _MGHAVE_ADV_2DAPI 1
 #define _MGHAVE_FIXED_MATH 1

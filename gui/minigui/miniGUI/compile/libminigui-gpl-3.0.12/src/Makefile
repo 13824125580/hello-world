@@ -69,20 +69,20 @@ am__base_list = \
   sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
 am__installdirs = "$(DESTDIR)$(libdir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
-#am__DEPENDENCIES_1 = server/libserver.la \
-#	client/libclient.la
+am__DEPENDENCIES_1 = server/libserver.la \
+	client/libclient.la
 #am__DEPENDENCIES_1 =  \
 #	standalone/libstandalone.la
 am__DEPENDENCIES_2 = $(COMMON_LADD) $(am__DEPENDENCIES_1) \
 	$(NEWGAL_LADD)
-libminigui_ths_la_DEPENDENCIES = $(am__DEPENDENCIES_2)
+libminigui_procs_la_DEPENDENCIES = $(am__DEPENDENCIES_2)
 am__objects_1 = template.lo
-am_libminigui_ths_la_OBJECTS = $(am__objects_1)
-libminigui_ths_la_OBJECTS =  \
-	$(am_libminigui_ths_la_OBJECTS)
-libminigui_ths_la_LINK = $(LIBTOOL) $(AM_LIBTOOLFLAGS) \
+am_libminigui_procs_la_OBJECTS = $(am__objects_1)
+libminigui_procs_la_OBJECTS =  \
+	$(am_libminigui_procs_la_OBJECTS)
+libminigui_procs_la_LINK = $(LIBTOOL) $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
-	$(libminigui_ths_la_LDFLAGS) $(LDFLAGS) -o $@
+	$(libminigui_procs_la_LDFLAGS) $(LDFLAGS) -o $@
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -95,8 +95,8 @@ LTCOMPILE = $(LIBTOOL) $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 CCLD = $(CC)
 LINK = $(LIBTOOL) $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link \
 	$(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(libminigui_ths_la_SOURCES)
-DIST_SOURCES = $(libminigui_ths_la_SOURCES)
+SOURCES = $(libminigui_procs_la_SOURCES)
+DIST_SOURCES = $(libminigui_procs_la_SOURCES)
 RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \
 	html-recursive info-recursive install-data-recursive \
 	install-dvi-recursive install-exec-recursive \
@@ -144,10 +144,10 @@ AUTOCONF = ${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/
 AUTOHEADER = ${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/libminigui-gpl-3.0.12/missing --run autoheader
 AUTOMAKE = ${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/libminigui-gpl-3.0.12/missing --run automake-1.11
 AWK = gawk
-CC = gcc
+CC = gcc32
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -D_WITH_TARGET_NONE -D__MINIGUI_LIB__ -D_REENTRANT -D_MG_ENABLE_SPLASH=1 -D_MG_ENABLE_SCREENSAVER=1 -Wall -Wstrict-prototypes -pipe -D_GNU_SOURCE
-CPP = gcc -E
+CFLAGS = -g3 -O0 -I/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/zlib/include -D_WITH_TARGET_NONE -D__MINIGUI_LIB__ -D_MG_ENABLE_SPLASH=1 -D_MG_ENABLE_SCREENSAVER=1 -Wall -Wstrict-prototypes -pipe -D_GNU_SOURCE
+CPP = gcc32 -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -166,7 +166,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = 
+LDFLAGS = -L/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/zlib/lib
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -177,9 +177,9 @@ LT_CURRENT = 12
 LT_RELEASE = 3.0
 LT_REVISION = 0
 MAKEINFO = ${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/libminigui-gpl-3.0.12/missing --run makeinfo
-MGLIB_SUFFIX = ths
+MGLIB_SUFFIX = procs
 MINIGUI_INCLUDE_LIST = 
-MINIGUI_LIBRARIES_LIST =  -ljpeg -lpng -ldl -lm -lpthread
+MINIGUI_LIBRARIES_LIST =  -ljpeg -lpng -ldl -lm
 MKDIR_P = /bin/mkdir -p
 MiniGUI_BINARY_AGE = 0
 MiniGUI_INTERFACE_AGE = 0
@@ -202,7 +202,7 @@ RANLIB = ranlib
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-SYSTEM_LIBS =  -ljpeg -lpng -ldl -lm -lpthread
+SYSTEM_LIBS =  -ljpeg -lpng -ldl -lm
 VERSION = 3.0.12
 VIDEO_DRIVERS =  dummy/libvideo_null.la fbcon/libvideo_fbcon.la pcxvfb/libvideo_pcxvfb.la
 VIDEO_SUBDIRS =  dummy fbcon pcxvfb
@@ -210,7 +210,7 @@ abs_builddir = /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compi
 abs_srcdir = /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/libminigui-gpl-3.0.12/src
 abs_top_builddir = /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/libminigui-gpl-3.0.12
 abs_top_srcdir = /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/libminigui-gpl-3.0.12
-ac_ct_CC = gcc
+ac_ct_CC = gcc32
 am__include = include
 am__leading_dot = .
 am__quote = 
@@ -282,11 +282,11 @@ COMMON_LADD = \
 #	sysres/libsysres.la         \
 #    misc/libmisc.la         	
 
-LITE_LADD = 
-#LITE_LADD = server/libserver.la client/libclient.la
+#LITE_LADD = 
+LITE_LADD = server/libserver.la client/libclient.la
 #LITE_LADD = standalone/libstandalone.la
-LITE_SUBDIRS = 
-#LITE_SUBDIRS = server client
+#LITE_SUBDIRS = 
+LITE_SUBDIRS = server client
 #LITE_SUBDIRS = standalone
 NEWGAL_LADD = newgal/libnewgal.la newgdi/libnewgdi.la
 NEWGAL_SUBDIRS = newgal newgdi
@@ -298,10 +298,10 @@ MGLIBADD = $(COMMON_LADD)      \
 			$(NEWGAL_LADD)
 
 MGLDFLAGS = -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
-lib_LTLIBRARIES = libminigui_ths.la
-libminigui_ths_la_LIBADD = $(MGLIBADD)
-libminigui_ths_la_SOURCES = $(MGSOURCES) 
-libminigui_ths_la_LDFLAGS = $(MGLDFLAGS) 
+lib_LTLIBRARIES = libminigui_procs.la
+libminigui_procs_la_LIBADD = $(MGLIBADD)
+libminigui_procs_la_SOURCES = $(MGSOURCES) 
+libminigui_procs_la_LDFLAGS = $(MGLDFLAGS) 
 CLEANFILES = *.a
 EXTRA_DIST = makefile.ng makefile.msvc
 all: all-recursive
@@ -369,8 +369,8 @@ clean-libLTLIBRARIES:
 	  echo "rm -f \"$${dir}/so_locations\""; \
 	  rm -f "$${dir}/so_locations"; \
 	done
-libminigui_ths.la: $(libminigui_ths_la_OBJECTS) $(libminigui_ths_la_DEPENDENCIES) 
-	$(libminigui_ths_la_LINK) -rpath $(libdir) $(libminigui_ths_la_OBJECTS) $(libminigui_ths_la_LIBADD) $(LIBS)
+libminigui_procs.la: $(libminigui_procs_la_OBJECTS) $(libminigui_procs_la_DEPENDENCIES) 
+	$(libminigui_procs_la_LINK) -rpath $(libdir) $(libminigui_procs_la_OBJECTS) $(libminigui_procs_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

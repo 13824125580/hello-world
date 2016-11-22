@@ -16,17 +16,17 @@
 # To install in $HOME instead of /usr/local, use:
 #    make install prefix=$HOME
 
-CC=gcc
+CC=gcc32
 
-CFLAGS=-O0 -m32 -g3 -DUSE_MMAP
+CFLAGS=-g -O0 -DUSE_MMAP
 #CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
 #CFLAGS=-g -DDEBUG
 #CFLAGS=-O3 -Wall -Wwrite-strings -Wpointer-arith -Wconversion \
 #           -Wstrict-prototypes -Wmissing-prototypes
 
 LDFLAGS=-L. libz.a
-LDSHARED=gcc
-CPP=gcc -E
+LDSHARED=gcc32
+CPP=gcc32 -E
 
 LIBS=libz.a
 SHAREDLIB=libz.so
@@ -39,7 +39,7 @@ TAR=tar
 SHELL=/bin/sh
 EXE=
 
-prefix =/usr/local
+prefix =/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/zlib
 exec_prefix =${prefix}
 libdir =${exec_prefix}/lib
 includedir =${prefix}/include

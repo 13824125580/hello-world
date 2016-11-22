@@ -1,0 +1,1 @@
+./configure CFLAGS=-g3 -O0 -I/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/zlib/include LDFLAGS=-L/home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/zlib/lib CC=gcc32

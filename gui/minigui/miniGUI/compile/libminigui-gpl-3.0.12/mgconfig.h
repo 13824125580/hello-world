@@ -178,7 +178,7 @@
 #define _HAVE_MATH_LIB 1
 
 /* Define if build MiniGUI-Processes (back-compatibility definition) */
-/* #undef _LITE_VERSION */
+#define _LITE_VERSION 1
 
 /* Define if support Arabic charset */
 #define _MGCHARSET_ARABIC 1
@@ -616,7 +616,7 @@
 #define _MGLF_RDR_SKIN 1
 
 /* MiniGUI library suffix */
-#define _MGLIB_SUFFIX "ths"
+#define _MGLIB_SUFFIX "procs"
 
 /* Define if compile max ttf cahce number for 10 (default value) */
 /* #undef _MGMAX_TTF_CACHE */
@@ -634,13 +634,13 @@
 #define _MGMISC_SAVESCREEN 1
 
 /* Define if build MiniGUI-Processes */
-/* #undef _MGRM_PROCESSES */
+#define _MGRM_PROCESSES 1
 
 /* Define if build MiniGUI-Standalone */
 /* #undef _MGRM_STANDALONE */
 
 /* Define if build MiniGUI-Threads */
-#define _MGRM_THREADS 1
+/* #undef _MGRM_THREADS */
 
 /* Define if the unit of timer is 10ms */
 #define _MGTIMER_UNIT_10MS 1

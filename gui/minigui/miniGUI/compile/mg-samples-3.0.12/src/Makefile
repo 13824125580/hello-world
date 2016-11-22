@@ -45,7 +45,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
-#am__EXEEXT_1 = scrnsaver$(EXEEXT) mginit$(EXEEXT)
+am__EXEEXT_1 = scrnsaver$(EXEEXT) mginit$(EXEEXT)
 am__EXEEXT_2 = scrnsaver$(EXEEXT) helloworld$(EXEEXT) \
 	mycontrol$(EXEEXT) dialogbox$(EXEEXT) simplekey$(EXEEXT) \
 	static$(EXEEXT) button$(EXEEXT) combobox$(EXEEXT) \
@@ -306,7 +306,7 @@ CFLAGS = -g3 -O0 -Wall -Wstrict-prototypes -pipe
 CPP = gcc32 -E
 CPPFLAGS = 
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"mg-samples\" -DVERSION=\"3.0.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MINIGUI_COMMON_H=1 -DHAVE_DECL___NOUNIX__=0 -DHAVE_DECL__MGRM_PROCESSES=0 -D_LANG_EN=1
+DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"mg-samples\" -DVERSION=\"3.0.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MINIGUI_COMMON_H=1 -DHAVE_DECL___NOUNIX__=0 -DHAVE_DECL__MGRM_PROCESSES=1 -D_LANG_EN=1
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -321,11 +321,11 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LDFLAGS = 
 LIBOBJS = 
-LIBS =  -L/usr/local/lib -lminigui_ths -ljpeg -lpng -ldl -lm -lpthread  
+LIBS =  -L/usr/local/lib -lminigui_procs -ljpeg -lpng -ldl -lm  
 LTLIBOBJS = 
 MAKEINFO = ${SHELL} /home/user/WorkSpace/github/hello-world/gui/minigui/miniGUI/compile/mg-samples-3.0.12/missing --run makeinfo
 MINIGUI_CFLAGS = -I/usr/local/include  
-MINIGUI_LIBS = -L/usr/local/lib -lminigui_ths -ljpeg -lpng -ldl -lm -lpthread  
+MINIGUI_LIBS = -L/usr/local/lib -lminigui_procs -ljpeg -lpng -ldl -lm  
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
 PACKAGE = mg-samples
@@ -405,8 +405,8 @@ COMMON_PROGS = scrnsaver helloworld mycontrol dialogbox simplekey \
                 timeeditor listview spinbox monthcal coolbar treeview \
 				nr_window scalerbmp
 
-LITE_PROGS = 
-#LITE_PROGS = scrnsaver mginit
+#LITE_PROGS = 
+LITE_PROGS = scrnsaver mginit
 CUSTOMMG_SRC = custom_minigui.c
 scrnsaver_SOURCES = scrnsaver.c scrnsaver_res_en.h scrnsaver_res_cn.h \
 									scrnsaver_res_tw.h $(CUSTOMMG_SRC)
