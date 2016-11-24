@@ -117,6 +117,8 @@ Bundle 'motemen/git-vim'
 Bundle 'kien/tabman.vim'
 "Bundle 'fisadev/vim-debug.vim'
 Bundle 'vim-scripts/TxtBrowser'
+Bundle 'phonzia/cppSyntaxCheck'
+Bundle 'ervandew/supertab'
 
 let g:SimpylFold_docstring_preview=1
 let g:EasyGrepMode = 2     " All:0, Open Buffers:1, TrackExt:2, 
@@ -199,6 +201,10 @@ set cursorline
 set cursorcolumn
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=yellow guibg=NONE guifg=NONE
 highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+"hi VisualNOS                     guibg=yellow                                                                                                                                                         
+"hi Visual                        guibg=yellow
+hi VisualNOS                     ctermbg=red                                                                                      
+hi Visual                        ctermbg=red
 
 "--------------------------------------------------------------------------
 "vim-airline   
@@ -348,3 +354,5 @@ au BufRead,BufNewFile *.txt setlocal ft=txt
 
 nmap <F4> :execute "cd" expand("%:p:h")<CR> 
 set autochdir
+"hi macro
+nmap mm :marks<CR>
