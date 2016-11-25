@@ -1,0 +1,104 @@
+#include <ft2build.h>  
+#include <ftoutln.h>
+#include FT_FREETYPE_H  
+#include <freetype/freetype.h>  
+#include <freetype/ftglyph.h>  
+  
+
+int ok()  
+{  
+    FT_Library  library;  
+    FT_Face     face;  
+    FT_Error    error;  
+    FT_UInt     charIdx;  
+    wchar_t     wch = 'a';  
+    char*       buffer;     // 用户申请的显示区域空间  
+    int         startX, startY; // 字符图像开始装入的位置  
+  
+    // 1. 初始化freetype2库  
+    error = FT_Init_FreeType(&library);  
+  
+    // 2. 创建一个face  
+    error = FT_New_Face(library, "C:\\windows\\font\\SURSONG.TTF", 0, &face);  
+  
+    // 3. 设置字体尺寸  
+    error = FT_Set_Char_Size(face, 16*64, 16*64, 96, 96);  
+  
+    // 4. 获取字符图像索引  
+    charIdx = FT_Get_Char_Index(face, wch);  
+  
+    // 5. 加载字符图像  
+    FT_Load_Glyph(face, charIdx, FT_LOAD_DEFAULT);  
+    if (face->glyph->format == FT_GLYPH_FORMAT_OUTLINE)  
+    {  
+        FT_Outline_Embolden(&(face->glyph->outline), 16); // 加粗轮廓线  
+    }  
+  
+    // 6. 获取字符位图  
+    if (face->glyph->format != FT_GLYPH_FORMAT_BITMAP)  
+    {  
+        FT_Render_Glyph(face->glyph, FT_RENDER_MODE_NORMAL);  
+    }  
+  
+    // 7. 拷贝字符位图到用户的buffer中(用户私人函数)  
+    // 注意左边的计算方法  
+    ft2CopyBitmapToBuf(buffer, startX+face->glyph->bitmap_left,  
+        startY+face->size->metrics.ascender/64-face->glyph->bitmap_top,  
+        face->glyph->bitmap);  
+    startX += face->glyph->advance.x/64;  
+}  
+  
+int main()  
+{  
+  
+ return ok();
+FT_Library    pFTLib         =  NULL;  
+FT_Face        pFTFace         =  NULL;  
+FT_Error    error         =   0 ;  
+//Init FreeType Lib to manage memory  
+error  =  FT_Init_FreeType( & pFTLib);  
+if (error)  
+{  
+    pFTLib  =   0 ;  
+    printf( " There is some error when Init Library " );  
+     return   - 1 ;  
+}  
+  
+//create font face from font file  
+error  =  FT_New_Face(pFTLib,  "/usr/share/fonts/truetype/tlwg/Waree-Bold.ttf" ,  0 ,  & pFTFace);  
+ if ( ! error)  
+ {  
+    FT_Set_Char_Size(pFTFace,  16 << 6 ,  16 << 6 ,  300 ,  300 );  
+    FT_Glyph    glyph;  
+     //  load glyph 'C'  
+    FT_Load_Glyph(pFTFace, FT_Get_Char_Index(pFTFace,  68 ), FT_LOAD_DEFAULT);  
+    error  =  FT_Get_Glyph(pFTFace -> glyph,  & glyph);  
+     if ( ! error)  
+     {  
+         //  convert glyph to bitmap with 256 gray  
+        FT_Glyph_To_Bitmap( & glyph, ft_render_mode_normal,  0 ,  1 );  
+        FT_BitmapGlyph    bitmap_glyph  =  (FT_BitmapGlyph)glyph;  
+        FT_Bitmap &bitmap  =  bitmap_glyph->bitmap;  
+         for ( int  i = 0 ; i < bitmap.rows;  ++ i)  
+         {  
+             for ( int  j = 0 ; j < bitmap.width;  ++ j)  
+             {  
+                 //  if it has gray>0 we set show it as 1, o otherwise  
+                printf( " %d " , bitmap.buffer[i * bitmap.width + j] ? 1 : 0 );  
+            }  
+            printf( " \n " );  
+        }  
+         //  free glyph  
+        FT_Done_Glyph(glyph);  
+        glyph  =  NULL;  
+    }  
+     //  free face  
+    FT_Done_Face(pFTFace);  
+    pFTFace  =  NULL;  
+}  
+  
+ //  free FreeType Lib  
+FT_Done_FreeType(pFTLib);  
+pFTLib  =  NULL;  
+  
+}  
