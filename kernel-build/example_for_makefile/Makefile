@@ -32,7 +32,7 @@ TARGET := test
  obj-y += c/
 
 all : 
-	make -C ./ -f $(TOPDIR)/Makefile.build
+	make -f $(TOPDIR)/Makefile.build obj=$(TOPDIR)
 	$(CC) $(LDFLAGS) -o $(TARGET) built-in.o
 
 

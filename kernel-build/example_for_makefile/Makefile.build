@@ -1,24 +1,30 @@
-﻿PHONY := build
+src:=$(obj)
+
+PHONY := build
 build :
 obj-y :=
 subdir-y :=
-include Makefile
+kbuild-dir := $(if $(filter /%,$(src)),$(src),$(TOPDIR)/$(src))
+include $(kbuild-dir)/Makefile
+
 __subdir-y	:= $(patsubst %/,%,$(filter %/, $(obj-y)))
 subdir-y	+= $(__subdir-y)
-subdir_objs := $(foreach f,$(subdir-y),$(f)/built-in.o)
 cur_objs := $(filter-out %/, $(obj-y))
 dep_files := $(foreach f,$(cur_objs),.$(f).d)
+subdir-y:= $(addprefix $(obj)/,$(subdir-y))
+subdir_objs := $(foreach f,$(subdir-y),$(f)/built-in.o)
+cur_objs:= $(addprefix $(obj)/,$(cur_objs))
 #dep_files := $(wildcard $(dep_files))
 #ifneq ($(dep_files),)
 #  include $(dep_files)
 #endif
 PHONY += $(subdir-y)
-build : $(subdir-y) built-in.o
+build : $(subdir-y) $(obj)/built-in.o
 $(subdir-y):
-	make -C $@ -f $(TOPDIR)/Makefile.build
-built-in.o : $(cur_objs) $(subdir_objs)
+	make -f $(TOPDIR)/Makefile.build obj=$@
+$(obj)/built-in.o : $(cur_objs) $(subdir_objs)
 	$(LD) -r -o $@ $^
-dep_file = .$@.d
+dep_file = $@.d
 %.o : %.c
 	$(CC) $(CFLAGS) -Wp,-MD,$(dep_file) -c -o $@ $<
 .PHONY : $(PHONY)
