@@ -6,6 +6,7 @@ obj-y :=
 subdir-y :=
 kbuild-dir := $(if $(filter /%,$(src)),$(src),$(TOPDIR)/$(src))
 include $(kbuild-dir)/Makefile
+include Kbuild.include
 
 __subdir-y	:= $(patsubst %/,%,$(filter %/, $(obj-y)))
 subdir-y	+= $(__subdir-y)
@@ -21,7 +22,7 @@ cur_objs:= $(addprefix $(obj)/,$(cur_objs))
 PHONY += $(subdir-y)
 build : $(subdir-y) $(obj)/built-in.o
 $(subdir-y):
-	make -f $(TOPDIR)/Makefile.build obj=$@
+	make $(build)=$@
 $(obj)/built-in.o : $(cur_objs) $(subdir_objs)
 	$(LD) -r -o $@ $^
 dep_file = $@.d

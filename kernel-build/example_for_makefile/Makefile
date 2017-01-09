@@ -22,6 +22,7 @@ export CFLAGS LDFLAGS
 
 TOPDIR := $(shell pwd)
 export TOPDIR
+include Kbuild.include
 
 TARGET := test
 
@@ -32,7 +33,7 @@ TARGET := test
  obj-y += c/
 
 all : 
-	make -f $(TOPDIR)/Makefile.build obj=$(TOPDIR)
+	make $(build)=$(TOPDIR)
 	$(CC) $(LDFLAGS) -o $(TARGET) built-in.o
 
 

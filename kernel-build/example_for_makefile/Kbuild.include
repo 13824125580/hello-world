@@ -1,0 +1,1 @@
+build := -f $(TOPDIR)/Makefile.build obj

@@ -8,7 +8,7 @@ int main()
 	a();
 	b();
 	c();
-	printf("%s line %d.\n", __func__, __LINE__); 
+	printf("%s linenew %d.\n", __func__, __LINE__); 
 
 	return 0;
 }
