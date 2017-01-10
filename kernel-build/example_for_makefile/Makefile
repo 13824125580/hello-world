@@ -10,6 +10,7 @@ NM		= $(CROSS_COMPILE)nm
 STRIP		= $(CROSS_COMPILE)strip
 OBJCOPY		= $(CROSS_COMPILE)objcopy
 OBJDUMP		= $(CROSS_COMPILE)objdump
+MAKEFLAGS += -rR  --no-print-directory
 
 export AS LD CC CPP AR NM
 export STRIP OBJCOPY OBJDUMP
@@ -31,10 +32,11 @@ TARGET := test
  obj-y += a/
  obj-y += b/
  obj-y += c/
+ obj-y += d/d.o
 
 all : 
-	make $(build)=$(TOPDIR)
-	$(CC) $(LDFLAGS) -o $(TARGET) built-in.o
+	@make $(build)=$(TOPDIR)
+	@$(CC) $(LDFLAGS) -o $(TARGET) built-in.o
 
 
 clean:

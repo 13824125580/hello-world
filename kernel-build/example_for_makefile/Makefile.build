@@ -11,21 +11,26 @@ include Kbuild.include
 __subdir-y	:= $(patsubst %/,%,$(filter %/, $(obj-y)))
 subdir-y	+= $(__subdir-y)
 cur_objs := $(filter-out %/, $(obj-y))
-dep_files := $(foreach f,$(cur_objs),.$(f).d)
 subdir-y:= $(addprefix $(obj)/,$(subdir-y))
 subdir_objs := $(foreach f,$(subdir-y),$(f)/built-in.o)
 cur_objs:= $(addprefix $(obj)/,$(cur_objs))
+dep_files := $(foreach f,$(cur_objs),$(f).d)
+
 #dep_files := $(wildcard $(dep_files))
-#ifneq ($(dep_files),)
-#  include $(dep_files)
-#endif
+ifneq ($(dep_files),)
+#  -include $(dep_files)
+   sinclude $(dep_files)
+endif
 PHONY += $(subdir-y)
 build : $(subdir-y) $(obj)/built-in.o
 $(subdir-y):
-	make $(build)=$@
+	@make $(build)=$@
 $(obj)/built-in.o : $(cur_objs) $(subdir_objs)
-	$(LD) -r -o $@ $^
+	@$(LD) -r -o $@ $^
 dep_file = $@.d
 %.o : %.c
-	$(CC) $(CFLAGS) -Wp,-MD,$(dep_file) -c -o $@ $<
+	@$(CC) $(CFLAGS) -Wp,-MD,$(dep_file) -c -o $@ $<
+	@echo $@
+#	echo $(dep_files)
+#	echo $(cur_objs)
 .PHONY : $(PHONY)
