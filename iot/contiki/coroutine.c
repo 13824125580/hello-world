@@ -20,10 +20,10 @@
 #include <stdio.h>
 
 
-#define Begin() static int state=0; switch(state) { case 0: 
+#define Begin() static void* state=NULL; int yield = 0;  do { if (state!=NULL) goto *state; } while(0)
 #define Yield(x)  \
-do { state=__LINE__; return x; case __LINE__:;  } while (0) 
-#define End() } 
+do { __label__ resume; yield = 1; resume: state = &&resume; if(yield == 1) return x;} while (0) 
+#define End()  
 
 
 int function(void) 
