@@ -19,29 +19,29 @@
 #include <string.h>
 #include <stdio.h>
 
+
+#define Begin() static int state=0; switch(state) { case 0: 
+#define Yield(x)  \
+do { state=__LINE__; return x; case __LINE__:;  } while (0) 
+#define End() } 
+
+
 int function(void) 
 {   
-    static int i, state = 0; //注意这是静态变量  
-    switch (state) 
-    {    
-        case 0: //这里是开始入口    
-        for (i = 0; i < 10; i++) 
-        {      
-		state = 1; //现在设置静态变量为1了
-		printf("%s line %d, i = %d.\n", __func__, __LINE__, i);
-		return i;             
-	case 1:; //到这里选择会被跳出   
-	}   
-	return 0;
-    } 
-}
+    static int i;   
+    Begin();   
+    for (i = 0; i < 10; i++)     
+   	 Yield(i);   
+    End(); 
 
+    return 0;
+}
 
 int main(void)
 {
-	int j;
+	
 	while(1)
-		printf("%s line %d, j = %d.\n", __func__, __LINE__, function());
+		printf("%s line %d, function() = %d.\n", __func__, __LINE__, function());
 
 	return 0;
 }
