@@ -1,0 +1,465 @@
+.TH "dbus Directory Reference" 3dbus "Mon Feb 20 2017" "Version 1.10.6" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dbus Directory Reference \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Files"
+
+.in +1c
+.ti -1c
+.RI "file \fBdbus-address\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-address\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-arch-deps\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-asv-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-asv-util\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-auth-script\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-auth-script\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-auth-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-auth\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-auth\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-bus\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-bus\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-connection-internal\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-connection\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-connection\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-credentials-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-credentials\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-credentials\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-dataslot\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-dataslot\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-errors\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-errors\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-file-unix\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-file-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-file\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-file\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-hash\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-hash\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-internals\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-internals\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-keyring\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-keyring\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-list\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-list\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-macros\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-mainloop\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-mainloop\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-basic\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-basic\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-byteswap-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-byteswap\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-byteswap\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-header\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-header\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-recursive-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-recursive\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-recursive\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-validate-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-validate\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-marshal-validate\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-memory\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-memory\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-mempool\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-mempool\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message-factory\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message-factory\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message-internal\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message-private\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-message\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-misc\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-misc\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-nonce\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-nonce\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-object-tree\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-object-tree\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pending-call-internal\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pending-call\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pending-call\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pipe-unix\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pipe-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pipe\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-pipe\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-protocol\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-resources\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-resources\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-debug-pipe\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-debug-pipe\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-launchd\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-launchd\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-protected\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-socket\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-socket\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-unix\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-unix\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server-win\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-server\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sha\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sha\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-shared\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-shell\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-shell\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-signature\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-signature\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-socket-set-epoll\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-socket-set-poll\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-socket-set\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-socket-set\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sockets-win\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-spawn-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-spawn\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-spawn\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-string-private\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-string-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-string\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-string\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-syntax\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-syntax\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-pthread\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-thread-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-unix\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-unix\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-util-unix\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-util-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-win\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-wince-glue\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps-wince-glue\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-sysdeps\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-test-main\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-test\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-test\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-threads-internal\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-threads\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-threads\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-timeout\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-timeout\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-protected\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-socket\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-socket\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-unix\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-unix\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-win\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport-win\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-transport\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-types\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-userdb-util\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-userdb\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-userdb\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-uuidgen\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-uuidgen\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-valgrind-internal\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-watch\&.c\fP"
+.br
+.ti -1c
+.RI "file \fBdbus-watch\&.h\fP"
+.br
+.ti -1c
+.RI "file \fBdbus\&.h\fP"
+.br
+.in -1c

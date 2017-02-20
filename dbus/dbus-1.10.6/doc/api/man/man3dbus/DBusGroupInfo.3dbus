@@ -1,0 +1,34 @@
+.TH "DBusGroupInfo" 3dbus "Mon Feb 20 2017" "Version 1.10.6" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusGroupInfo \- 
+.PP
+Information about a UNIX group\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dbus-sysdeps-unix\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBdbus_gid_t\fP \fBgid\fP"
+.br
+.RI "\fIGID\&. \fP"
+.ti -1c
+.RI "char * \fBgroupname\fP"
+.br
+.RI "\fIGroup name\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Information about a UNIX group\&. 
+.PP
+Definition at line 119 of file dbus-sysdeps-unix\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

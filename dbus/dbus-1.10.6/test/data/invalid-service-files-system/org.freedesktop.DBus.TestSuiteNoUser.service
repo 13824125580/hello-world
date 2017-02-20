@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.freedesktop.DBus.TestSuiteNoUser
+Exec=/home/user/WorkSpace/dbus/dbus-1.10.6/test/test-service

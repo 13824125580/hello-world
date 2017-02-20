@@ -1,0 +1,29 @@
+.TH "DBusSocket" 3dbus "Mon Feb 20 2017" "Version 1.10.6" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusSocket \- 
+.PP
+Socket interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dbus-sysdeps\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int \fBfd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Socket interface\&. 
+.PP
+Definition at line 148 of file dbus-sysdeps\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

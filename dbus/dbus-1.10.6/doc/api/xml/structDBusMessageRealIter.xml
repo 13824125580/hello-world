@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDBusMessageRealIter" kind="struct" prot="public">
+    <compoundname>DBusMessageRealIter</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusMessageRealIter_1a552cb582c65645ed46d9d1ad38ece3c7" prot="public" static="no" mutable="no">
+        <type><ref refid="structDBusMessage" kindref="compound">DBusMessage</ref> *</type>
+        <definition>DBusMessage* DBusMessageRealIter::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+<para>Message used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="128" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="128" bodyend="-1"/>
+        <referencedby refid="group__DBusMessageInternals_1ga1ae02a435d19c3363e11c74b08c43ab2" compoundref="dbus-message_8c" startline="796" endline="1066">_dbus_message_iter_get_args_valist</referencedby>
+        <referencedby refid="group__DBusMessage_1ga41c23a05e552d0574d0444d4693d18ab" compoundref="dbus-message_8c" startline="2293" endline="2325">dbus_message_iter_get_basic</referencedby>
+        <referencedby refid="group__DBusMessage_1ga17491f3b75b3203f6fc47dcc2e3b221b" compoundref="dbus-message_8c" startline="2692" endline="2789">dbus_message_iter_append_basic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageRealIter_1ac10324f74497a5c2288eef8fbcd3ae42" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DBusTypes_1gaf513803b030613a669cc7ef199f90a8b" kindref="member">dbus_uint32_t</ref></type>
+        <definition>dbus_uint32_t DBusMessageRealIter::changed_stamp</definition>
+        <argsstring></argsstring>
+        <name>changed_stamp</name>
+        <bitfield> CHANGED_STAMP_BITS</bitfield>
+        <briefdescription>
+<para>stamp to detect invalid iters </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="129" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageRealIter_1a835b7990b2909beb06fc2dc38b76a089" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DBusTypes_1gaf513803b030613a669cc7ef199f90a8b" kindref="member">dbus_uint32_t</ref></type>
+        <definition>dbus_uint32_t DBusMessageRealIter::iter_type</definition>
+        <argsstring></argsstring>
+        <name>iter_type</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+<para>whether this is a reader or writer iter </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="130" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="130" bodyend="-1"/>
+        <referencedby refid="group__DBusMessage_1gaaffc75a699c96ff6197287f166df2149" compoundref="dbus-message_8c" startline="2095" endline="2103">dbus_message_iter_has_next</referencedby>
+        <referencedby refid="group__DBusMessage_1ga554e9fafd4dcc84cebe9da9344846a82" compoundref="dbus-message_8c" startline="2114" endline="2122">dbus_message_iter_next</referencedby>
+        <referencedby refid="group__DBusMessage_1ga5aae3c882a75aed953d8b3d489e9b271" compoundref="dbus-message_8c" startline="2139" endline="2147">dbus_message_iter_get_arg_type</referencedby>
+        <referencedby refid="group__DBusMessage_1ga868a7aeddb9b54b2805776b512f68cb4" compoundref="dbus-message_8c" startline="2158" endline="2167">dbus_message_iter_get_element_type</referencedby>
+        <referencedby refid="group__DBusMessage_1ga17491f3b75b3203f6fc47dcc2e3b221b" compoundref="dbus-message_8c" startline="2692" endline="2789">dbus_message_iter_append_basic</referencedby>
+        <referencedby refid="group__DBusMessage_1ga6e2d1e936c3c61fe00d80a3f22fd5e76" compoundref="dbus-message_8c" startline="2827" endline="2861">dbus_message_iter_append_fixed_array</referencedby>
+        <referencedby refid="group__DBusMessage_1ga943150f4e87fd8507da224d22c266100" compoundref="dbus-message_8c" startline="2885" endline="2937">dbus_message_iter_open_container</referencedby>
+        <referencedby refid="group__DBusMessage_1gaf00482f63d4af88b7851621d1f24087a" compoundref="dbus-message_8c" startline="2954" endline="2973">dbus_message_iter_close_container</referencedby>
+        <referencedby refid="group__DBusMessage_1ga6e62697ca11f0a57dbecc93d5721612c" compoundref="dbus-message_8c" startline="2987" endline="3001">dbus_message_iter_abandon_container</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageRealIter_1a93789e6f814d55b5952fee34d286f6d6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DBusTypes_1gaf513803b030613a669cc7ef199f90a8b" kindref="member">dbus_uint32_t</ref></type>
+        <definition>dbus_uint32_t DBusMessageRealIter::sig_refcount</definition>
+        <argsstring></argsstring>
+        <name>sig_refcount</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>depth of open_signature() </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="131" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageRealIter_1a93bc11bb1521743170b0b411b32140cf" prot="public" static="no" mutable="no">
+        <type><ref refid="structDBusTypeWriter" kindref="compound">DBusTypeWriter</ref></type>
+        <definition>DBusTypeWriter DBusMessageRealIter::writer</definition>
+        <argsstring></argsstring>
+        <name>writer</name>
+        <briefdescription>
+<para>writer </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="134" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="134" bodyend="-1"/>
+        <referencedby refid="group__DBusMessage_1gaf733047c467ce21f4a53b65a388f1e9d" compoundref="dbus-message_8c" startline="2457" endline="2476">dbus_message_iter_init_append</referencedby>
+        <referencedby refid="group__DBusMessage_1ga17491f3b75b3203f6fc47dcc2e3b221b" compoundref="dbus-message_8c" startline="2692" endline="2789">dbus_message_iter_append_basic</referencedby>
+        <referencedby refid="group__DBusMessage_1ga6e2d1e936c3c61fe00d80a3f22fd5e76" compoundref="dbus-message_8c" startline="2827" endline="2861">dbus_message_iter_append_fixed_array</referencedby>
+        <referencedby refid="group__DBusMessage_1ga943150f4e87fd8507da224d22c266100" compoundref="dbus-message_8c" startline="2885" endline="2937">dbus_message_iter_open_container</referencedby>
+        <referencedby refid="group__DBusMessage_1gaf00482f63d4af88b7851621d1f24087a" compoundref="dbus-message_8c" startline="2954" endline="2973">dbus_message_iter_close_container</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageRealIter_1ae5c4e45b0a5d6642850144f642d7db67" prot="public" static="no" mutable="no">
+        <type><ref refid="structDBusTypeReader" kindref="compound">DBusTypeReader</ref></type>
+        <definition>DBusTypeReader DBusMessageRealIter::reader</definition>
+        <argsstring></argsstring>
+        <name>reader</name>
+        <briefdescription>
+<para>reader </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="135" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="135" bodyend="-1"/>
+        <referencedby refid="group__DBusMessageInternals_1ga1ae02a435d19c3363e11c74b08c43ab2" compoundref="dbus-message_8c" startline="796" endline="1066">_dbus_message_iter_get_args_valist</referencedby>
+        <referencedby refid="group__DBusMessage_1ga9f98b47c84f0e401ea985e681de4e963" compoundref="dbus-message_8c" startline="2064" endline="2086">dbus_message_iter_init</referencedby>
+        <referencedby refid="group__DBusMessage_1gaaffc75a699c96ff6197287f166df2149" compoundref="dbus-message_8c" startline="2095" endline="2103">dbus_message_iter_has_next</referencedby>
+        <referencedby refid="group__DBusMessage_1ga554e9fafd4dcc84cebe9da9344846a82" compoundref="dbus-message_8c" startline="2114" endline="2122">dbus_message_iter_next</referencedby>
+        <referencedby refid="group__DBusMessage_1ga5aae3c882a75aed953d8b3d489e9b271" compoundref="dbus-message_8c" startline="2139" endline="2147">dbus_message_iter_get_arg_type</referencedby>
+        <referencedby refid="group__DBusMessage_1ga868a7aeddb9b54b2805776b512f68cb4" compoundref="dbus-message_8c" startline="2158" endline="2167">dbus_message_iter_get_element_type</referencedby>
+        <referencedby refid="group__DBusMessage_1ga7652e1208743da5dd4ecc5aef07bf207" compoundref="dbus-message_8c" startline="2195" endline="2206">dbus_message_iter_recurse</referencedby>
+        <referencedby refid="group__DBusMessage_1gab4579a88a1a7eaf648350466f585ef8b" compoundref="dbus-message_8c" startline="2220" endline="2243">dbus_message_iter_get_signature</referencedby>
+        <referencedby refid="group__DBusMessage_1ga41c23a05e552d0574d0444d4693d18ab" compoundref="dbus-message_8c" startline="2293" endline="2325">dbus_message_iter_get_basic</referencedby>
+        <referencedby refid="group__DBusMessage_1gabe60e5d5c3f06f90254eef3e72b5cf49" compoundref="dbus-message_8c" startline="2338" endline="2367">dbus_message_iter_get_element_count</referencedby>
+        <referencedby refid="group__DBusMessage_1gab8ff47649497b3e0b93a2289f5d3eb23" compoundref="dbus-message_8c" startline="2382" endline="2389">dbus_message_iter_get_array_len</referencedby>
+        <referencedby refid="group__DBusMessage_1gae195a3312ae445e7ef0196854f3523f8" compoundref="dbus-message_8c" startline="2427" endline="2443">dbus_message_iter_get_fixed_array</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusMessageRealIter_1ac9c3ce5775bc9f5f0720b65093345ec6" prot="public" static="no" mutable="no">
+        <type>union DBusMessageRealIter::@6</type>
+        <definition>union DBusMessageRealIter::@6  DBusMessageRealIter::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+<para>the type writer or reader that does all the work </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="136" column="1"/>
+        <referencedby refid="group__DBusMessageInternals_1ga1ae02a435d19c3363e11c74b08c43ab2" compoundref="dbus-message_8c" startline="796" endline="1066">_dbus_message_iter_get_args_valist</referencedby>
+        <referencedby refid="group__DBusMessage_1ga9f98b47c84f0e401ea985e681de4e963" compoundref="dbus-message_8c" startline="2064" endline="2086">dbus_message_iter_init</referencedby>
+        <referencedby refid="group__DBusMessage_1gaaffc75a699c96ff6197287f166df2149" compoundref="dbus-message_8c" startline="2095" endline="2103">dbus_message_iter_has_next</referencedby>
+        <referencedby refid="group__DBusMessage_1ga554e9fafd4dcc84cebe9da9344846a82" compoundref="dbus-message_8c" startline="2114" endline="2122">dbus_message_iter_next</referencedby>
+        <referencedby refid="group__DBusMessage_1ga5aae3c882a75aed953d8b3d489e9b271" compoundref="dbus-message_8c" startline="2139" endline="2147">dbus_message_iter_get_arg_type</referencedby>
+        <referencedby refid="group__DBusMessage_1ga868a7aeddb9b54b2805776b512f68cb4" compoundref="dbus-message_8c" startline="2158" endline="2167">dbus_message_iter_get_element_type</referencedby>
+        <referencedby refid="group__DBusMessage_1ga7652e1208743da5dd4ecc5aef07bf207" compoundref="dbus-message_8c" startline="2195" endline="2206">dbus_message_iter_recurse</referencedby>
+        <referencedby refid="group__DBusMessage_1gab4579a88a1a7eaf648350466f585ef8b" compoundref="dbus-message_8c" startline="2220" endline="2243">dbus_message_iter_get_signature</referencedby>
+        <referencedby refid="group__DBusMessage_1ga41c23a05e552d0574d0444d4693d18ab" compoundref="dbus-message_8c" startline="2293" endline="2325">dbus_message_iter_get_basic</referencedby>
+        <referencedby refid="group__DBusMessage_1gabe60e5d5c3f06f90254eef3e72b5cf49" compoundref="dbus-message_8c" startline="2338" endline="2367">dbus_message_iter_get_element_count</referencedby>
+        <referencedby refid="group__DBusMessage_1gab8ff47649497b3e0b93a2289f5d3eb23" compoundref="dbus-message_8c" startline="2382" endline="2389">dbus_message_iter_get_array_len</referencedby>
+        <referencedby refid="group__DBusMessage_1gae195a3312ae445e7ef0196854f3523f8" compoundref="dbus-message_8c" startline="2427" endline="2443">dbus_message_iter_get_fixed_array</referencedby>
+        <referencedby refid="group__DBusMessage_1gaf733047c467ce21f4a53b65a388f1e9d" compoundref="dbus-message_8c" startline="2457" endline="2476">dbus_message_iter_init_append</referencedby>
+        <referencedby refid="group__DBusMessage_1ga17491f3b75b3203f6fc47dcc2e3b221b" compoundref="dbus-message_8c" startline="2692" endline="2789">dbus_message_iter_append_basic</referencedby>
+        <referencedby refid="group__DBusMessage_1ga6e2d1e936c3c61fe00d80a3f22fd5e76" compoundref="dbus-message_8c" startline="2827" endline="2861">dbus_message_iter_append_fixed_array</referencedby>
+        <referencedby refid="group__DBusMessage_1ga943150f4e87fd8507da224d22c266100" compoundref="dbus-message_8c" startline="2885" endline="2937">dbus_message_iter_open_container</referencedby>
+        <referencedby refid="group__DBusMessage_1gaf00482f63d4af88b7851621d1f24087a" compoundref="dbus-message_8c" startline="2954" endline="2973">dbus_message_iter_close_container</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internals of <ref refid="structDBusMessageIter" kindref="compound">DBusMessageIter</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Object representing a position in a message. All fields are internal. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="256">
+        <label>DBusHeader</label>
+        <link refid="structDBusHeader"/>
+        <childnode refid="248" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="257" relation="usage">
+          <edgelabel>fields</edgelabel>
+        </childnode>
+      </node>
+      <node id="251">
+        <label>DBusMessage</label>
+        <link refid="structDBusMessage"/>
+        <childnode refid="248" relation="usage">
+          <edgelabel>body</edgelabel>
+        </childnode>
+        <childnode refid="252" relation="usage">
+          <edgelabel>slot_list</edgelabel>
+        </childnode>
+        <childnode refid="254" relation="usage">
+          <edgelabel>counters</edgelabel>
+        </childnode>
+        <childnode refid="255" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+        <childnode refid="256" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+      </node>
+      <node id="247">
+        <label>DBusTypeWriter</label>
+        <link refid="structDBusTypeWriter"/>
+        <childnode refid="248" relation="usage">
+          <edgelabel>value_str</edgelabel>
+          <edgelabel>type_str</edgelabel>
+        </childnode>
+      </node>
+      <node id="257">
+        <label>DBusHeaderField</label>
+        <link refid="structDBusHeaderField"/>
+      </node>
+      <node id="255">
+        <label>DBusAtomic</label>
+        <link refid="structDBusAtomic"/>
+      </node>
+      <node id="250">
+        <label>DBusTypeReaderClass</label>
+        <link refid="structDBusTypeReaderClass"/>
+      </node>
+      <node id="246">
+        <label>DBusMessageRealIter</label>
+        <link refid="structDBusMessageRealIter"/>
+        <childnode refid="247" relation="usage">
+          <edgelabel>writer</edgelabel>
+        </childnode>
+        <childnode refid="249" relation="usage">
+          <edgelabel>reader</edgelabel>
+        </childnode>
+        <childnode refid="251" relation="usage">
+          <edgelabel>message</edgelabel>
+        </childnode>
+      </node>
+      <node id="253">
+        <label>DBusDataSlot</label>
+        <link refid="structDBusDataSlot"/>
+      </node>
+      <node id="254">
+        <label>DBusList</label>
+        <link refid="structDBusList"/>
+        <childnode refid="254" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="249">
+        <label>DBusTypeReader</label>
+        <link refid="structDBusTypeReader"/>
+        <childnode refid="248" relation="usage">
+          <edgelabel>value_str</edgelabel>
+          <edgelabel>type_str</edgelabel>
+        </childnode>
+        <childnode refid="250" relation="usage">
+          <edgelabel>klass</edgelabel>
+        </childnode>
+      </node>
+      <node id="252">
+        <label>DBusDataSlotList</label>
+        <link refid="structDBusDataSlotList"/>
+        <childnode refid="253" relation="usage">
+          <edgelabel>slots</edgelabel>
+        </childnode>
+      </node>
+      <node id="248">
+        <label>DBusString</label>
+        <link refid="structDBusString"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" line="127" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-message.c" bodystart="126" bodyend="137"/>
+    <listofallmembers>
+      <member refid="structDBusMessageRealIter_1ac10324f74497a5c2288eef8fbcd3ae42" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>changed_stamp</name></member>
+      <member refid="structDBusMessageRealIter_1a835b7990b2909beb06fc2dc38b76a089" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>iter_type</name></member>
+      <member refid="structDBusMessageRealIter_1a552cb582c65645ed46d9d1ad38ece3c7" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>message</name></member>
+      <member refid="structDBusMessageRealIter_1ae5c4e45b0a5d6642850144f642d7db67" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>reader</name></member>
+      <member refid="structDBusMessageRealIter_1a93789e6f814d55b5952fee34d286f6d6" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>sig_refcount</name></member>
+      <member refid="structDBusMessageRealIter_1ac9c3ce5775bc9f5f0720b65093345ec6" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>u</name></member>
+      <member refid="structDBusMessageRealIter_1a93bc11bb1521743170b0b411b32140cf" prot="public" virt="non-virtual"><scope>DBusMessageRealIter</scope><name>writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

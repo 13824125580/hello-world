@@ -1,0 +1,57 @@
+.TH "Message bus APIs internals" 3dbus "Mon Feb 20 2017" "Version 1.10.6" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Message bus APIs internals \- 
+.PP
+Internals of functions for communicating with the message bus\&.  
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBBusData\fP"
+.br
+.RI "\fIBlock of message-bus-related data we attach to each \fBDBusConnection\fP used with these convenience functions\&. \fP"
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBN_BUS_TYPES\fP   3"
+.br
+.RI "\fINumber of bus types\&. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_dbus_bus_notify_shared_connection_disconnected_unlocked\fP (\fBDBusConnection\fP *connection)"
+.br
+.RI "\fIInternal function that checks to see if this is a shared connection owned by the bus and if it is unref it\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internals of functions for communicating with the message bus\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "void _dbus_bus_notify_shared_connection_disconnected_unlocked (\fBDBusConnection\fP *connection)"
+
+.PP
+Internal function that checks to see if this is a shared connection owned by the bus and if it is unref it\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconnection\fP a connection that has been disconnected\&. 
+.RE
+.PP
+
+.PP
+Definition at line 387 of file dbus-bus\&.c\&.
+.PP
+References _DBUS_LOCK, _DBUS_UNLOCK, N_BUS_TYPES, and NULL\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

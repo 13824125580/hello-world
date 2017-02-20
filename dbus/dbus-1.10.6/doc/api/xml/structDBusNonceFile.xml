@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDBusNonceFile" kind="struct" prot="public">
+    <compoundname>DBusNonceFile</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusNonceFile_1a948c0168b857d66fa4414380712dcd95" prot="public" static="no" mutable="no">
+        <type><ref refid="structDBusString" kindref="compound">DBusString</ref></type>
+        <definition>DBusString DBusNonceFile::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-nonce.h" line="38" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-nonce.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusNonceFile_1a95c86635fc0950930f9a691a18f872fc" prot="public" static="no" mutable="no">
+        <type><ref refid="structDBusString" kindref="compound">DBusString</ref></type>
+        <definition>DBusString DBusNonceFile::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-nonce.h" line="39" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-nonce.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="259">
+        <label>DBusNonceFile</label>
+        <link refid="structDBusNonceFile"/>
+        <childnode refid="260" relation="usage">
+          <edgelabel>dir</edgelabel>
+          <edgelabel>path</edgelabel>
+        </childnode>
+      </node>
+      <node id="260">
+        <label>DBusString</label>
+        <link refid="structDBusString"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-nonce.h" line="37" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-nonce.h" bodystart="36" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structDBusNonceFile_1a95c86635fc0950930f9a691a18f872fc" prot="public" virt="non-virtual"><scope>DBusNonceFile</scope><name>dir</name></member>
+      <member refid="structDBusNonceFile_1a948c0168b857d66fa4414380712dcd95" prot="public" virt="non-virtual"><scope>DBusNonceFile</scope><name>path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

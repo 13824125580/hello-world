@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDBusHashEntry" kind="struct" prot="public">
+    <compoundname>DBusHashEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusHashEntry_1ae986e25c0b24237f9848ff43aa1d8501" prot="public" static="no" mutable="no">
+        <type><ref refid="structDBusHashEntry" kindref="compound">DBusHashEntry</ref> *</type>
+        <definition>DBusHashEntry* DBusHashEntry::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+<para>Pointer to next entry in this hash bucket, or <ref refid="group__DBusMacros_1ga070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref> for end of chain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" line="145" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" bodystart="145" bodyend="-1"/>
+        <referencedby refid="group__DBusHashTable_1ga5ba600e4a4ea0dac1ab3f2bbf9e1665e" compoundref="dbus-hash_8c" startline="361" endline="410">_dbus_hash_table_unref</referencedby>
+        <referencedby refid="group__DBusHashTable_1ga64bdce3eb1c543dfb162faada65f4b78" compoundref="dbus-hash_8c" startline="543" endline="581">_dbus_hash_iter_next</referencedby>
+        <referencedby refid="group__DBusHashTable_1gab156c35d6dd9ff6e408a835db28323fb" compoundref="dbus-hash_8c" startline="740" endline="768">_dbus_hash_iter_lookup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusHashEntry_1aefd9bbdcbc7d15c906e2c289c8d2e894" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DBusHashEntry::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>Hash key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" line="149" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" bodystart="149" bodyend="-1"/>
+        <referencedby refid="group__DBusHashTable_1ga747442b12362dab8efab975f6c595266" compoundref="dbus-hash_8c" startline="659" endline="669">_dbus_hash_iter_get_int_key</referencedby>
+        <referencedby refid="group__DBusHashTable_1ga4df55654e028b405994d2e4d64107a27" compoundref="dbus-hash_8c" startline="678" endline="688">_dbus_hash_iter_get_uintptr_key</referencedby>
+        <referencedby refid="group__DBusHashTable_1gadc314f126076580dae3bd4f7f83824ca" compoundref="dbus-hash_8c" startline="696" endline="706">_dbus_hash_iter_get_string_key</referencedby>
+        <referencedby refid="group__DBusHashTable_1ga2065297d8e8e3590d2235acf7f00a6d2" compoundref="dbus-hash_8c" startline="1248" endline="1271">_dbus_hash_table_insert_int</referencedby>
+        <referencedby refid="group__DBusHashTable_1gaed7365623dcb72434f890feed28e9e42" compoundref="dbus-hash_8c" startline="1289" endline="1312">_dbus_hash_table_insert_uintptr</referencedby>
+        <referencedby refid="group__DBusHashTable_1gaf1cba5e6765de02d2ee29acae72b985b" compoundref="dbus-hash_8c" startline="1366" endline="1388">_dbus_hash_table_insert_string_preallocated</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusHashEntry_1ad792e9c81cc3a23859b2c60b3b00af3e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DBusHashEntry::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Hash value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" line="150" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" bodystart="150" bodyend="-1"/>
+        <referencedby refid="group__DBusHashTable_1ga0b774bd61c68c0e9d53ea9f187595e6b" compoundref="dbus-hash_8c" startline="613" endline="623">_dbus_hash_iter_get_value</referencedby>
+        <referencedby refid="group__DBusHashTable_1ga24193343c0948019d4a302fc18bfd5d9" compoundref="dbus-hash_8c" startline="636" endline="650">_dbus_hash_iter_set_value</referencedby>
+        <referencedby refid="group__DBusHashTable_1gacfadc6796f8652a5b66333800b019d30" compoundref="dbus-hash_8c" startline="1049" endline="1062">_dbus_hash_table_lookup_string</referencedby>
+        <referencedby refid="group__DBusHashTable_1gafdd731ccadca43757061f9486ca8c216" compoundref="dbus-hash_8c" startline="1074" endline="1087">_dbus_hash_table_lookup_int</referencedby>
+        <referencedby refid="group__DBusHashTable_1ga5ad1c4ccc1405b449d22b69d70b67860" compoundref="dbus-hash_8c" startline="1099" endline="1112">_dbus_hash_table_lookup_uintptr</referencedby>
+        <referencedby refid="group__DBusHashTable_1ga2065297d8e8e3590d2235acf7f00a6d2" compoundref="dbus-hash_8c" startline="1248" endline="1271">_dbus_hash_table_insert_int</referencedby>
+        <referencedby refid="group__DBusHashTable_1gaed7365623dcb72434f890feed28e9e42" compoundref="dbus-hash_8c" startline="1289" endline="1312">_dbus_hash_table_insert_uintptr</referencedby>
+        <referencedby refid="group__DBusHashTable_1gaf1cba5e6765de02d2ee29acae72b985b" compoundref="dbus-hash_8c" startline="1366" endline="1388">_dbus_hash_table_insert_string_preallocated</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal representation of a hash entry. </para>    </briefdescription>
+    <detaileddescription>
+<para>A single entry (key-value pair) in the hash table. Internal to hash table implementation. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="164">
+        <label>DBusHashEntry</label>
+        <link refid="structDBusHashEntry"/>
+        <childnode refid="164" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" line="144" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-hash.c" bodystart="143" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structDBusHashEntry_1aefd9bbdcbc7d15c906e2c289c8d2e894" prot="public" virt="non-virtual"><scope>DBusHashEntry</scope><name>key</name></member>
+      <member refid="structDBusHashEntry_1ae986e25c0b24237f9848ff43aa1d8501" prot="public" virt="non-virtual"><scope>DBusHashEntry</scope><name>next</name></member>
+      <member refid="structDBusHashEntry_1ad792e9c81cc3a23859b2c60b3b00af3e" prot="public" virt="non-virtual"><scope>DBusHashEntry</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

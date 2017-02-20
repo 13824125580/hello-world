@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDBusError" kind="struct" prot="public">
+    <compoundname>DBusError</compoundname>
+    <includes refid="dbus-errors_8h" local="no">dbus-errors.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusError_1a09a9614ff07fdf3ef163b232ff934581" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* DBusError::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>public error name field </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="50" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="group__DBusErrors_1ga3cc15cc37bcd3aaca87aa4d791c124f5" compoundref="dbus-errors_8c" startline="243" endline="266">dbus_set_error_const</referencedby>
+        <referencedby refid="group__DBusErrors_1ga48515c580199514026542fe053ef1887" compoundref="dbus-errors_8c" startline="302" endline="320">dbus_error_has_name</referencedby>
+        <referencedby refid="group__DBusErrors_1gab0ed62e9fc2685897eb2d41467c89405" compoundref="dbus-errors_8c" startline="329" endline="335">dbus_error_is_set</referencedby>
+        <referencedby refid="group__DBusInternalsUtils_1ga4dd7c3aad4203b12e9fb2d00c888f085" compoundref="dbus-internals_8c" startline="653" endline="679">_dbus_generate_uuid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1afb559175326de5b6b340e26204e92d72" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* DBusError::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+<para>public error message field </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="51" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="group__DBusConnection_1ga24730ca6fd2e9132873962a32df7628c" compoundref="dbus-connection_8c" startline="5759" endline="5782">dbus_connection_register_object_path</referencedby>
+        <referencedby refid="group__DBusConnection_1gac4473b37bfa74ccf7459959d27e7bc59" compoundref="dbus-connection_8c" startline="5831" endline="5854">dbus_connection_register_fallback</referencedby>
+        <referencedby refid="group__DBusErrors_1ga3cc15cc37bcd3aaca87aa4d791c124f5" compoundref="dbus-errors_8c" startline="243" endline="266">dbus_set_error_const</referencedby>
+        <referencedby refid="group__DBusErrors_1ga48515c580199514026542fe053ef1887" compoundref="dbus-errors_8c" startline="302" endline="320">dbus_error_has_name</referencedby>
+        <referencedby refid="group__DBusErrors_1gab0ed62e9fc2685897eb2d41467c89405" compoundref="dbus-errors_8c" startline="329" endline="335">dbus_error_is_set</referencedby>
+        <referencedby refid="group__DBusInternalsUtils_1ga4dd7c3aad4203b12e9fb2d00c888f085" compoundref="dbus-internals_8c" startline="653" endline="679">_dbus_generate_uuid</referencedby>
+        <referencedby refid="group__DBusInternalsUtils_1ga91f62cbd7b14e0763809aee0be259df7" compoundref="dbus-internals_8c" startline="884" endline="930">_dbus_get_local_machine_uuid_encoded</referencedby>
+        <referencedby refid="group__DBusKeyring_1ga6dad1720cf97ca6017c39330bec8d09f" compoundref="dbus-keyring_8c" startline="705" endline="834">_dbus_keyring_new_for_credentials</referencedby>
+        <referencedby refid="group__DBusSysdeps_1gaca61af8681a48862835ea8cfd263f5ab" compoundref="dbus-sysdeps-util-unix_8c" startline="85" endline="165">_dbus_become_daemon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1ac4f05617ba5dc961b77f2e28cca4479a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int DBusError::dummy1</definition>
+        <argsstring></argsstring>
+        <name>dummy1</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>placeholder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="53" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1a6048668f01f290ff3da8c78335766124" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int DBusError::dummy2</definition>
+        <argsstring></argsstring>
+        <name>dummy2</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>placeholder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="54" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1a9b94a86f9cf52673d035143750e57730" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int DBusError::dummy3</definition>
+        <argsstring></argsstring>
+        <name>dummy3</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>placeholder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="55" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1a7350e44450620916084d72426ce02f4c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int DBusError::dummy4</definition>
+        <argsstring></argsstring>
+        <name>dummy4</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>placeholder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="56" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1aacb4935a2287d44f4b6443020f1c19e5" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int DBusError::dummy5</definition>
+        <argsstring></argsstring>
+        <name>dummy5</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>placeholder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="57" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDBusError_1acbbfd6edbd4503230b8c7f77aaf56e2e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DBusError::padding1</definition>
+        <argsstring></argsstring>
+        <name>padding1</name>
+        <briefdescription>
+<para>placeholder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="59" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Object representing an exception. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" line="49" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-errors.h" bodystart="48" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structDBusError_1ac4f05617ba5dc961b77f2e28cca4479a" prot="public" virt="non-virtual"><scope>DBusError</scope><name>dummy1</name></member>
+      <member refid="structDBusError_1a6048668f01f290ff3da8c78335766124" prot="public" virt="non-virtual"><scope>DBusError</scope><name>dummy2</name></member>
+      <member refid="structDBusError_1a9b94a86f9cf52673d035143750e57730" prot="public" virt="non-virtual"><scope>DBusError</scope><name>dummy3</name></member>
+      <member refid="structDBusError_1a7350e44450620916084d72426ce02f4c" prot="public" virt="non-virtual"><scope>DBusError</scope><name>dummy4</name></member>
+      <member refid="structDBusError_1aacb4935a2287d44f4b6443020f1c19e5" prot="public" virt="non-virtual"><scope>DBusError</scope><name>dummy5</name></member>
+      <member refid="structDBusError_1afb559175326de5b6b340e26204e92d72" prot="public" virt="non-virtual"><scope>DBusError</scope><name>message</name></member>
+      <member refid="structDBusError_1a09a9614ff07fdf3ef163b232ff934581" prot="public" virt="non-virtual"><scope>DBusError</scope><name>name</name></member>
+      <member refid="structDBusError_1acbbfd6edbd4503230b8c7f77aaf56e2e" prot="public" virt="non-virtual"><scope>DBusError</scope><name>padding1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

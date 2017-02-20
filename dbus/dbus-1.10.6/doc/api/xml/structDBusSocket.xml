@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDBusSocket" kind="struct" prot="public">
+    <compoundname>DBusSocket</compoundname>
+    <includes refid="dbus-sysdeps_8h" local="no">dbus-sysdeps.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDBusSocket_1ac7379c2a5c87a9c574d1ffa362a4cf23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DBusSocket::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-sysdeps.h" line="148" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-sysdeps.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Socket interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-sysdeps.h" line="148" column="1" bodyfile="/home/user/WorkSpace/dbus/dbus-1.10.6/dbus/dbus-sysdeps.h" bodystart="148" bodyend="148"/>
+    <listofallmembers>
+      <member refid="structDBusSocket_1ac7379c2a5c87a9c574d1ffa362a4cf23" prot="public" virt="non-virtual"><scope>DBusSocket</scope><name>fd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

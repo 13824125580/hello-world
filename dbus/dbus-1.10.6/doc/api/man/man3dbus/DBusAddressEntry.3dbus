@@ -1,0 +1,36 @@
+.TH "DBusAddressEntry" 3dbus "Mon Feb 20 2017" "Version 1.10.6" "D-Bus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DBusAddressEntry \- 
+.PP
+Internals of \fBDBusAddressEntry\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDBusString\fP \fBmethod\fP"
+.br
+.RI "\fIThe address type (unix, tcp, etc\&.) \fP"
+.ti -1c
+.RI "\fBDBusList\fP * \fBkeys\fP"
+.br
+.RI "\fIList of keys\&. \fP"
+.ti -1c
+.RI "\fBDBusList\fP * \fBvalues\fP"
+.br
+.RI "\fIList of values\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Internals of \fBDBusAddressEntry\fP\&. 
+.PP
+Definition at line 43 of file dbus-address\&.c\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for D-Bus from the source code\&.

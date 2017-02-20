@@ -1,0 +1,10 @@
+LIBDBUS_1_3 {
+  global:
+    dbus_*;
+  local:
+    *;
+};
+LIBDBUS_PRIVATE_1.10.6 {
+  global:
+    _dbus_*;
+};
